@@ -1,0 +1,214 @@
+-- Merging decision tree log ---
+manifest
+ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml:2:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\d6ac0ee5643a1b6841992e6ccd4960e4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.sina.weibo.sdk:core:4.3.8] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\545a58ae90d0d77309ac9baf2bf854bd\AndroidManifest.xml:2:1-42:12
+MERGED from [androidx.core:core-ktx:1.0.2] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\7b57b2e2d12aca65284776932324fe13\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\5f46c3923a35542d141fb770af3046fb\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\b47f17c947c59cb07f402d459948bbfe\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\8474954a7371f3715971a53a8510620e\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\5e347b6a747c58f6da5fb73a16d30e99\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\2d283f1e9c641e9e3d0c0962ce79ad20\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\94de2e610f024d8013275cd3fd15ad43\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\8bfbb3a9f1c547b4878f0e26163f4d3e\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\2de0ae84186b40f4fea01e2c6e222ff2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\e8d6bd2929d130c0616874417c4dcad2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\3775d5b479060c5cb613460b9a30d8af\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\cefc26184f7d6ca2db87e25e4996e5cd\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\5e0177ba2ed21e19c596ce3f19b433b4\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\7d9273877f4f87b63c29dee18a085a48\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\c2e01ac69a34d98064f03509b7137b80\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.2] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\bfe8c478008a71cb562b4848a4b47b78\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\2183d69864b6c19c868978f45fa5a016\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\14765512e6819d9fa53e620a62b5fed3\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\9fe027725f9545c4d6e869d331b7ce5e\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\cda5d533231cc946ae5c22fc02417b98\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\993f1b0f97dc4b4ff523273d08b19d50\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\f1c37515c1ca39c300344afe704937e6\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\c636d2ccde19180c39cf2f2386e618f2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\ec0c349bc5a54d1d84349430ff05a4a7\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\44a07e7b4f9ab21e8589e22c5071cad2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\fb7702319f199c4352129dc01e0b8dc8\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\54ee9aea5c7b8226d842a4a2d1e741ab\AndroidManifest.xml:17:1-22:12
+INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml:2:1-24:12
+	package
+		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:4:11-38
+		INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml
+		INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml
+		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:2:1-24:12
+		INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml
+	xmlns:dist
+		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:3:11-67
+	android:versionCode
+		INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml
+		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:2:1-24:12
+		INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:2:11-69
+dist:module
+ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:6:5-39
+	dist:instant
+		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:6:18-37
+application
+ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:8:5-22:19
+MERGED from [com.sina.weibo.sdk:core:4.3.8] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\545a58ae90d0d77309ac9baf2bf854bd\AndroidManifest.xml:11:5-40:19
+MERGED from [com.sina.weibo.sdk:core:4.3.8] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\545a58ae90d0d77309ac9baf2bf854bd\AndroidManifest.xml:11:5-40:19
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\5f46c3923a35542d141fb770af3046fb\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\5f46c3923a35542d141fb770af3046fb\AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.0.2] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\bfe8c478008a71cb562b4848a4b47b78\AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.2] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\bfe8c478008a71cb562b4848a4b47b78\AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\2183d69864b6c19c868978f45fa5a016\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\2183d69864b6c19c868978f45fa5a016\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.2] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\bfe8c478008a71cb562b4848a4b47b78\AndroidManifest.xml:22:18-86
+	android:supportsRtl
+		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:13:13-39
+	android:label
+		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:11:13-45
+	android:roundIcon
+		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:12:13-58
+	android:icon
+		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:10:13-47
+	android:allowBackup
+		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:9:13-39
+	android:theme
+		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:14:13-44
+activity#com.example.weibo.MainActivity
+ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:15:9-21:20
+	android:name
+		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:15:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:16:13-20:29
+action#android.intent.action.MAIN
+ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:17:17-68
+	android:name
+		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:17:25-66
+category#android.intent.category.LAUNCHER
+ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:19:17-76
+	android:name
+		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:19:27-74
+uses-sdk
+INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml
+INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\d6ac0ee5643a1b6841992e6ccd4960e4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\d6ac0ee5643a1b6841992e6ccd4960e4\AndroidManifest.xml:20:5-44
+MERGED from [com.sina.weibo.sdk:core:4.3.8] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\545a58ae90d0d77309ac9baf2bf854bd\AndroidManifest.xml:7:5-9:41
+MERGED from [com.sina.weibo.sdk:core:4.3.8] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\545a58ae90d0d77309ac9baf2bf854bd\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.core:core-ktx:1.0.2] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\7b57b2e2d12aca65284776932324fe13\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.0.2] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\7b57b2e2d12aca65284776932324fe13\AndroidManifest.xml:5:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\5f46c3923a35542d141fb770af3046fb\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\5f46c3923a35542d141fb770af3046fb\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\b47f17c947c59cb07f402d459948bbfe\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\b47f17c947c59cb07f402d459948bbfe\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\8474954a7371f3715971a53a8510620e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\8474954a7371f3715971a53a8510620e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\5e347b6a747c58f6da5fb73a16d30e99\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\5e347b6a747c58f6da5fb73a16d30e99\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\2d283f1e9c641e9e3d0c0962ce79ad20\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\2d283f1e9c641e9e3d0c0962ce79ad20\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\94de2e610f024d8013275cd3fd15ad43\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\94de2e610f024d8013275cd3fd15ad43\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\8bfbb3a9f1c547b4878f0e26163f4d3e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\8bfbb3a9f1c547b4878f0e26163f4d3e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\2de0ae84186b40f4fea01e2c6e222ff2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\2de0ae84186b40f4fea01e2c6e222ff2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\e8d6bd2929d130c0616874417c4dcad2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\e8d6bd2929d130c0616874417c4dcad2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\3775d5b479060c5cb613460b9a30d8af\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\3775d5b479060c5cb613460b9a30d8af\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\cefc26184f7d6ca2db87e25e4996e5cd\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\cefc26184f7d6ca2db87e25e4996e5cd\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\5e0177ba2ed21e19c596ce3f19b433b4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\5e0177ba2ed21e19c596ce3f19b433b4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\7d9273877f4f87b63c29dee18a085a48\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\7d9273877f4f87b63c29dee18a085a48\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\c2e01ac69a34d98064f03509b7137b80\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\c2e01ac69a34d98064f03509b7137b80\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.2] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\bfe8c478008a71cb562b4848a4b47b78\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.2] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\bfe8c478008a71cb562b4848a4b47b78\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\2183d69864b6c19c868978f45fa5a016\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\2183d69864b6c19c868978f45fa5a016\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\14765512e6819d9fa53e620a62b5fed3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\14765512e6819d9fa53e620a62b5fed3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\9fe027725f9545c4d6e869d331b7ce5e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\9fe027725f9545c4d6e869d331b7ce5e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\cda5d533231cc946ae5c22fc02417b98\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\cda5d533231cc946ae5c22fc02417b98\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\993f1b0f97dc4b4ff523273d08b19d50\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\993f1b0f97dc4b4ff523273d08b19d50\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\f1c37515c1ca39c300344afe704937e6\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\f1c37515c1ca39c300344afe704937e6\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\c636d2ccde19180c39cf2f2386e618f2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\c636d2ccde19180c39cf2f2386e618f2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\ec0c349bc5a54d1d84349430ff05a4a7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\ec0c349bc5a54d1d84349430ff05a4a7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\44a07e7b4f9ab21e8589e22c5071cad2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\44a07e7b4f9ab21e8589e22c5071cad2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\fb7702319f199c4352129dc01e0b8dc8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\fb7702319f199c4352129dc01e0b8dc8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\54ee9aea5c7b8226d842a4a2d1e741ab\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\54ee9aea5c7b8226d842a4a2d1e741ab\AndroidManifest.xml:20:5-44
+INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml
+INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml
+		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml
+		INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml
+		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml
+		INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml
+activity#com.sina.weibo.sdk.web.WeiboSdkWebActivity
+ADDED from [com.sina.weibo.sdk:core:4.3.8] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\545a58ae90d0d77309ac9baf2bf854bd\AndroidManifest.xml:12:9-17:20
+	android:windowSoftInputMode
+		ADDED from [com.sina.weibo.sdk:core:4.3.8] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\545a58ae90d0d77309ac9baf2bf854bd\AndroidManifest.xml:16:13-55
+	android:exported
+		ADDED from [com.sina.weibo.sdk:core:4.3.8] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\545a58ae90d0d77309ac9baf2bf854bd\AndroidManifest.xml:15:13-37
+	android:configChanges
+		ADDED from [com.sina.weibo.sdk:core:4.3.8] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\545a58ae90d0d77309ac9baf2bf854bd\AndroidManifest.xml:14:13-63
+	android:name
+		ADDED from [com.sina.weibo.sdk:core:4.3.8] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\545a58ae90d0d77309ac9baf2bf854bd\AndroidManifest.xml:13:13-70
+activity#com.sina.weibo.sdk.share.WbShareTransActivity
+ADDED from [com.sina.weibo.sdk:core:4.3.8] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\545a58ae90d0d77309ac9baf2bf854bd\AndroidManifest.xml:18:9-28:20
+	android:launchMode
+		ADDED from [com.sina.weibo.sdk:core:4.3.8] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\545a58ae90d0d77309ac9baf2bf854bd\AndroidManifest.xml:21:13-43
+	android:configChanges
+		ADDED from [com.sina.weibo.sdk:core:4.3.8] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\545a58ae90d0d77309ac9baf2bf854bd\AndroidManifest.xml:20:13-63
+	android:theme
+		ADDED from [com.sina.weibo.sdk:core:4.3.8] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\545a58ae90d0d77309ac9baf2bf854bd\AndroidManifest.xml:22:13-72
+	android:name
+		ADDED from [com.sina.weibo.sdk:core:4.3.8] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\545a58ae90d0d77309ac9baf2bf854bd\AndroidManifest.xml:19:13-73
+intent-filter#action:name:com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY+category:name:android.intent.category.DEFAULT
+ADDED from [com.sina.weibo.sdk:core:4.3.8] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\545a58ae90d0d77309ac9baf2bf854bd\AndroidManifest.xml:23:13-27:29
+action#com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY
+ADDED from [com.sina.weibo.sdk:core:4.3.8] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\545a58ae90d0d77309ac9baf2bf854bd\AndroidManifest.xml:24:17-92
+	android:name
+		ADDED from [com.sina.weibo.sdk:core:4.3.8] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\545a58ae90d0d77309ac9baf2bf854bd\AndroidManifest.xml:24:25-89
+category#android.intent.category.DEFAULT
+ADDED from [com.sina.weibo.sdk:core:4.3.8] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\545a58ae90d0d77309ac9baf2bf854bd\AndroidManifest.xml:26:17-76
+	android:name
+		ADDED from [com.sina.weibo.sdk:core:4.3.8] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\545a58ae90d0d77309ac9baf2bf854bd\AndroidManifest.xml:26:27-73
+activity#com.sina.weibo.sdk.share.WbShareToStoryActivity
+ADDED from [com.sina.weibo.sdk:core:4.3.8] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\545a58ae90d0d77309ac9baf2bf854bd\AndroidManifest.xml:29:9-39:20
+	android:launchMode
+		ADDED from [com.sina.weibo.sdk:core:4.3.8] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\545a58ae90d0d77309ac9baf2bf854bd\AndroidManifest.xml:32:13-44
+	android:configChanges
+		ADDED from [com.sina.weibo.sdk:core:4.3.8] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\545a58ae90d0d77309ac9baf2bf854bd\AndroidManifest.xml:31:13-63
+	android:theme
+		ADDED from [com.sina.weibo.sdk:core:4.3.8] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\545a58ae90d0d77309ac9baf2bf854bd\AndroidManifest.xml:33:13-72
+	android:name
+		ADDED from [com.sina.weibo.sdk:core:4.3.8] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\545a58ae90d0d77309ac9baf2bf854bd\AndroidManifest.xml:30:13-75
+intent-filter#action:name:com.sina.weibo.sdk.action.ACTION_SDK_REQ_STORY+category:name:android.intent.category.DEFAULT
+ADDED from [com.sina.weibo.sdk:core:4.3.8] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\545a58ae90d0d77309ac9baf2bf854bd\AndroidManifest.xml:34:13-38:29
+action#com.sina.weibo.sdk.action.ACTION_SDK_REQ_STORY
+ADDED from [com.sina.weibo.sdk:core:4.3.8] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\545a58ae90d0d77309ac9baf2bf854bd\AndroidManifest.xml:35:17-89
+	android:name
+		ADDED from [com.sina.weibo.sdk:core:4.3.8] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\545a58ae90d0d77309ac9baf2bf854bd\AndroidManifest.xml:35:25-86
