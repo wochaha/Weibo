@@ -40,7 +40,8 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.5' //json解析库
     implementation 'com.zhihu.android:matisse:0.5.2-beta4' //本地图片选择器
     implementation 'de.hdodenhof:circleimageview:3.0.0' //圆形图片
-    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-andx-11' //封装完善的recyclerview
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-andx-11'
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-andx-11'//封装完善的recyclerview
     implementation "com.squareup.retrofit2:retrofit:2.6.0"
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
 }
