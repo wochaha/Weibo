@@ -3,6 +3,7 @@ package com.example.weibo.activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.transaction
 import com.example.weibo.R
 
 abstract class SingleFragmentActivity : AppCompatActivity() {
@@ -18,9 +19,10 @@ abstract class SingleFragmentActivity : AppCompatActivity() {
         if (fragment == null) {
 //            获取对应的fragment
             fragment = createFragment()
-            manager.beginTransaction()
-                .add(R.id.fragment_container,fragment)
-                .commit()
+
+            manager.transaction {
+                add(R.id.fragment_container,fragment)
+            }
         }
     }
 }
