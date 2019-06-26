@@ -10,7 +10,7 @@ android {
     compileSdkVersion 29
     defaultConfig {
         applicationId "com.example.weibo"
-        minSdkVersion 19
+        minSdkVersion 26
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -46,4 +46,7 @@ dependencies {
     implementation "com.squareup.retrofit2:retrofit:2.6.0"
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     implementation 'org.greenrobot:greendao:3.2.2'
+    implementation 'com.sina.weibo.sdk:core:2.0.3:openDefaultRelease@aar'
+
+    implementation 'androidx.cardview:cardview:1.0.0'
 }

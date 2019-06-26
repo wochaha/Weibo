@@ -6,7 +6,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.transaction
 import com.example.weibo.R
 
-abstract class SingleFragmentActivity : AppCompatActivity() {
+abstract class SingleFragmentActivity : BaseAppCompatActivity() {
     protected abstract fun createFragment() : Fragment
 
     override fun onCreate(savedInstanceState: Bundle?) {

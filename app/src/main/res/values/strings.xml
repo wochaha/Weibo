@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Weibo</string>
+    <string name="login">授权并登录</string>
 </resources>
