@@ -49,4 +49,5 @@ dependencies {
     implementation 'com.sina.weibo.sdk:core:2.0.3:openDefaultRelease@aar'
 
     implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
 }

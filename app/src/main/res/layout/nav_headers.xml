@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_head_portrait"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_user_portrait"
+            android:layout_marginTop="48dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+
+    <TextView android:layout_margin="8dp" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp" tools:text="乌拉拉"/>
+
+</LinearLayout>

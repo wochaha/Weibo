@@ -1,13 +1,13 @@
 package com.example.weibo.activity
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
+import android.view.MenuItem
+import androidx.fragment.app.Fragment
 import com.example.weibo.R
+import com.example.weibo.fragment.WBListFragment
 
-class HomePageActivity : BaseAppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home_page)
+class HomePageActivity : SingleFragmentActivity() {
+    override fun createFragment(): Fragment {
+        return WBListFragment()
     }
 }

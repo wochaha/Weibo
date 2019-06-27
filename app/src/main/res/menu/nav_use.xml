@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="@string/mine">
+
+            <menu>
+
+                <item android:id="@+id/home_page"
+                      android:icon="@drawable/ic_home_page"
+                      android:title="@string/home_page"/>
+
+                <item android:id="@+id/message"
+                      android:icon="@drawable/ic_home_page"
+                      android:title="@string/message"/>
+
+                <item android:id="@+id/relate_to_me"
+                      android:icon="@drawable/ic_home_page"
+                      android:title="@string/relate_to_me"/>
+
+                <item android:id="@+id/comment"
+                      android:icon="@drawable/ic_home_page"
+                      android:title="@string/comment"/>
+
+                <item android:id="@+id/thumb_for_me"
+                      android:icon="@drawable/ic_home_page"
+                      android:title="@string/thumb_for_me"/>
+
+                <item android:id="@+id/my_collections"
+                      android:icon="@drawable/ic_home_page"
+                      android:title="@string/collections"/>
+
+            </menu>
+
+        </item>
+
+        <item android:title="@string/account_manage">
+
+            <menu>
+
+                <item android:id="@+id/quit"
+                      android:title="@string/quit_present_account"
+                      android:icon="@drawable/ic_home_page"/>
+
+            </menu>
+
+        </item>
+
+    </group>
+
+</menu>

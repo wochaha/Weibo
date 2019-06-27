@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">Weibo</string>
     <string name="login">授权并登录</string>
+    <string name="home_page">首页</string>
+    <string name="relate_to_me">\@我的</string>
+    <string name="message">私信</string>
+    <string name="thumb_for_me">收到的赞</string>
+    <string name="comment">评论</string>
+    <string name="collections">我的收藏</string>
+    <string name="account_manage">账号管理</string>
+    <string name="quit_present_account">退出登录</string>
+    <string name="mine">我的</string>
 </resources>

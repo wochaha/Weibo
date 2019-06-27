@@ -4,6 +4,23 @@
             "outputFile": "G:\\Weibo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
             "map": [
                 {
+                    "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\d75edb7bf09cc0eb1e29f5ba954606ca\\res\\values-large-v4\\values-large-v4.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,177",
+                        "endColumns": "121,133",
+                        "endOffsets": "172,306"
+                    },
+                    "to": {
+                        "startLines": "11,12",
+                        "startColumns": "4,4",
+                        "startOffsets": "752,874",
+                        "endColumns": "121,133",
+                        "endOffsets": "869,1003"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\30ff9e21a5fbe57f95870037d0735237\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",

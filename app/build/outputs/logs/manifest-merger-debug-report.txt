@@ -1,10 +1,11 @@
 -- Merging decision tree log ---
 manifest
-ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml:2:1-26:12
+ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml:2:1-29:12
 MERGED from [com.zhihu.android:matisse:0.5.2-beta4] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\6a0a8fbb776b9376b5991df5c8ec0163\AndroidManifest.xml:17:1-33:12
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\d75edb7bf09cc0eb1e29f5ba954606ca\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\30ff9e21a5fbe57f95870037d0735237\AndroidManifest.xml:17:1-22:12
 MERGED from [com.sina.weibo.sdk:core:4.3.8] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\b675f65f1f8092207c6f69050bc9e815\AndroidManifest.xml:2:1-42:12
 MERGED from [androidx.core:core-ktx:1.0.2] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\7df8e50274c079234df802493bc6b734\AndroidManifest.xml:2:1-7:12
@@ -22,6 +23,7 @@ MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Hasee\.gradl
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\db07aa840ac070ca840d86342e45caf1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\9afdfb528893c8ad8fd3180cc18b8456\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.media:media:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\c50521c8e767df07f930cfae776b9cef\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\5423c0a39636a4efba4cca482f2b5f34\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\0b88b85e706a4956b85513c16d602197\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\3104abc35b64ffe98649a71c11708a2e\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\95b483de1a9cd8e977a1038b61a6b965\AndroidManifest.xml:17:1-22:12
@@ -44,22 +46,22 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Hasee\.g
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\dd98a6acd6de8c9f893b54f331222417\AndroidManifest.xml:17:1-22:12
 MERGED from [it.sephiroth.android.library.imagezoom:library:1.0.4] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\29689160020a5996334ad48d3b9170dd\AndroidManifest.xml:1:106-7:12
 MERGED from [it.sephiroth.android.library.easing:library:1.0.2] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\f0d2cf76b9ea83778abbd3c9ccc4be50\AndroidManifest.xml:1:116-8:12
-INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml:2:1-29:12
 	package
 		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:4:11-38
 		INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml
 		INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml
-		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:2:1-26:12
+		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:2:1-29:12
 		INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml
 	xmlns:dist
 		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:3:11-67
 	android:versionCode
 		INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml
-		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:2:1-26:12
+		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:2:1-29:12
 		INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:2:11-69
@@ -67,10 +69,16 @@ dist:module
 ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:6:5-39
 	dist:instant
 		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:6:18-37
+uses-permission#android.permission.INTERNET
+ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:8:5-66
+	android:name
+		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:8:22-64
 application
-ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:8:5-24:19
+ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:10:5-27:19
 MERGED from [com.zhihu.android:matisse:0.5.2-beta4] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\6a0a8fbb776b9376b5991df5c8ec0163\AndroidManifest.xml:27:5-31:19
 MERGED from [com.zhihu.android:matisse:0.5.2-beta4] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\6a0a8fbb776b9376b5991df5c8ec0163\AndroidManifest.xml:27:5-31:19
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\d75edb7bf09cc0eb1e29f5ba954606ca\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\d75edb7bf09cc0eb1e29f5ba954606ca\AndroidManifest.xml:22:5-20
 MERGED from [com.sina.weibo.sdk:core:4.3.8] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\b675f65f1f8092207c6f69050bc9e815\AndroidManifest.xml:11:5-40:19
 MERGED from [com.sina.weibo.sdk:core:4.3.8] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\b675f65f1f8092207c6f69050bc9e815\AndroidManifest.xml:11:5-40:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\94e64bc11a1eb57c9726a3b083331e16\AndroidManifest.xml:9:5-20
@@ -92,41 +100,45 @@ MERGED from [it.sephiroth.android.library.easing:library:1.0.2] C:\Users\Hasee\.
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.0.2] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\b18618cbf27efb4f00ac970e1113f1bf\AndroidManifest.xml:22:18-86
 	android:supportsRtl
-		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:13:13-39
+		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:16:13-39
 	android:label
-		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:11:13-45
+		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:14:13-45
 	android:roundIcon
-		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:12:13-58
+		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:15:13-58
 	android:icon
-		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:10:13-47
+		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:13:13-47
 	android:allowBackup
-		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:9:13-39
+		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:12:13-39
 	android:theme
-		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:14:13-44
+		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:17:13-44
+	android:name
+		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:11:13-42
 activity#com.example.weibo.activity.HomePageActivity
-ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:15:9-16:20
+ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:18:9-19:20
 	android:name
-		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:15:19-60
+		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:18:19-60
 activity#com.example.weibo.activity.WBLoginActivity
-ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:17:9-23:20
+ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:20:9-26:20
 	android:name
-		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:17:19-59
+		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:20:19-59
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:18:13-22:29
+ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:21:13-25:29
 action#android.intent.action.MAIN
-ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:19:17-68
+ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:22:17-68
 	android:name
-		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:19:25-66
+		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:22:25-66
 category#android.intent.category.LAUNCHER
-ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:21:17-76
+ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:24:17-76
 	android:name
-		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:21:27-74
+		ADDED from G:\Weibo\app\src\main\AndroidManifest.xml:24:27-74
 uses-sdk
 INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml
 INJECTED from G:\Weibo\app\src\main\AndroidManifest.xml
 MERGED from [com.zhihu.android:matisse:0.5.2-beta4] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\6a0a8fbb776b9376b5991df5c8ec0163\AndroidManifest.xml:20:5-22:41
 MERGED from [com.zhihu.android:matisse:0.5.2-beta4] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\6a0a8fbb776b9376b5991df5c8ec0163\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\d75edb7bf09cc0eb1e29f5ba954606ca\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\d75edb7bf09cc0eb1e29f5ba954606ca\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\30ff9e21a5fbe57f95870037d0735237\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\30ff9e21a5fbe57f95870037d0735237\AndroidManifest.xml:20:5-44
 MERGED from [com.sina.weibo.sdk:core:4.3.8] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\b675f65f1f8092207c6f69050bc9e815\AndroidManifest.xml:7:5-9:41
@@ -161,6 +173,8 @@ MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\Hasee\.gradl
 MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\9afdfb528893c8ad8fd3180cc18b8456\AndroidManifest.xml:20:5-44
 MERGED from [androidx.media:media:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\c50521c8e767df07f930cfae776b9cef\AndroidManifest.xml:20:5-44
 MERGED from [androidx.media:media:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\c50521c8e767df07f930cfae776b9cef\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\5423c0a39636a4efba4cca482f2b5f34\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\5423c0a39636a4efba4cca482f2b5f34\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\0b88b85e706a4956b85513c16d602197\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\0b88b85e706a4956b85513c16d602197\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Hasee\.gradle\caches\transforms-2\files-2.1\3104abc35b64ffe98649a71c11708a2e\AndroidManifest.xml:20:5-44

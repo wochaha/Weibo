@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import com.example.weibo.R
+import com.example.weibo.WBApplication
 import com.example.weibo.constant.Constants
 import com.sina.weibo.sdk.WbSdk
 import com.sina.weibo.sdk.auth.*
@@ -28,7 +29,7 @@ class WBLoginActivity : BaseAppCompatActivity() {
             ssoHandler?.authorize(SelfWbAuthListener())
         }
 
-        mAccessToken = AccessTokenKeeper.readAccessToken(this)
+        mAccessToken = AccessTokenKeeper.readAccessToken(WBApplication.getContext())
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -43,7 +44,7 @@ class WBLoginActivity : BaseAppCompatActivity() {
                 if (p0 != null) {
                     mAccessToken = p0
                     if (mAccessToken?.isSessionValid!!){
-                        AccessTokenKeeper.writeAccessToken(this@WBLoginActivity,mAccessToken)
+                        AccessTokenKeeper.writeAccessToken(WBApplication.getContext(),mAccessToken)
                         val intent = Intent(this@WBLoginActivity,HomePageActivity::class.java)
                         startActivity(intent)
                         finish()
