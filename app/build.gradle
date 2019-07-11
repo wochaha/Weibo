@@ -16,6 +16,7 @@ android {
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -36,14 +37,17 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
-    implementation "com.squareup.okhttp3:okhttp:3.14.2" // okhttp-rxjava-retrofit三件套
+    implementation "com.squareup.okhttp3:okhttp:3.12.2" // okhttp-rxjava
     implementation "io.reactivex.rxjava2:rxjava:2.2.10"
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'com.github.bumptech.glide:glide:4.9.0' //glide图片解析库
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    implementation 'top.zibin:Luban:1.1.8' //Luban图片压缩库
     implementation 'com.google.code.gson:gson:2.8.5' //json解析库
     implementation 'com.zhihu.android:matisse:0.5.2-beta4' //本地图片选择器
     implementation 'de.hdodenhof:circleimageview:3.0.0' //圆形图片
     implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-andx-11'
     implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-andx-11'//封装完善的recyclerview
-    implementation "com.squareup.retrofit2:retrofit:2.6.0"
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     implementation 'org.greenrobot:greendao:3.2.2'
     implementation 'com.sina.weibo.sdk:core:2.0.3:openDefaultRelease@aar'

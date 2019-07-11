@@ -1,13 +1,25 @@
 package com.example.weibo.activity
 
+import android.content.Context
 import android.os.Bundle
+import android.util.Log
 import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.transaction
 import com.example.weibo.R
+import com.example.weibo.WBApplication
+import com.example.weibo.bean.WBUser
 import com.example.weibo.fragment.WBListFragment
 import com.example.weibo.fragment.WBUserFragment
+import com.example.weibo.utils.getUserInfo
 import com.google.android.material.navigation.NavigationView
+import com.sina.weibo.sdk.auth.AccessTokenKeeper
+import com.sina.weibo.sdk.auth.Oauth2AccessToken
+import io.reactivex.Observable
+import io.reactivex.android.schedulers.AndroidSchedulers
+import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_home_page.*
 import kotlinx.android.synthetic.main.nav_headers.view.*
 
@@ -17,16 +29,21 @@ abstract class SingleFragmentActivity : BaseAppCompatActivity(),NavigationView.O
      */
     protected abstract fun createFragment() : Fragment
 
+    private var token:Oauth2AccessToken? = null
+
     private var currentFragment:Fragment? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_page)
+
+        token = AccessTokenKeeper.readAccessToken(WBApplication.getContext())
+
         addFragment()
 
         nav_menu.setCheckedItem(R.id.home_page)
         nav_menu.getHeaderView(0).user_head_portrait.setOnClickListener {
-            replaceFragment(WBUserFragment())
+            replaceFragment(supportFragmentManager,WBUserFragment())
             drawer_menu_layout.closeDrawers()
         }
         nav_menu.setNavigationItemSelectedListener(this)
@@ -51,8 +68,7 @@ abstract class SingleFragmentActivity : BaseAppCompatActivity(),NavigationView.O
     /**
      * @param fragment 需要显示的fragment
      */
-    fun replaceFragment(fragment: Fragment){
-        val manager = supportFragmentManager
+    fun replaceFragment(manager: FragmentManager,fragment: Fragment){
         if (!fragment.isAdded){
             if (currentFragment != null){
                 manager.transaction {
@@ -75,7 +91,7 @@ abstract class SingleFragmentActivity : BaseAppCompatActivity(),NavigationView.O
     override fun onNavigationItemSelected(p0: MenuItem): Boolean {
         when(p0.itemId){
             R.id.home_page -> {
-                replaceFragment(WBListFragment())
+                replaceFragment(supportFragmentManager,WBUserFragment())
             }
         }
         drawer_menu_layout.closeDrawers()

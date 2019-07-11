@@ -1,18 +1,21 @@
 package com.example.weibo.fragment
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.weibo.R
 import com.example.weibo.WBApplication
+import com.example.weibo.bean.WBUser
 import com.sina.weibo.sdk.auth.AccessTokenKeeper
 import com.sina.weibo.sdk.auth.Oauth2AccessToken
-import kotlinx.android.synthetic.main.fragment_wblist.view.*
 
 class WBListFragment : Fragment() {
     private lateinit var token: Oauth2AccessToken
+    private val TAG = "TOKEN"
+    private  var userInfo:WBUser? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,7 +24,7 @@ class WBListFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.fragment_wblist,container,false)
-        view.token_text_view.text = token.uid
+
         return view
     }
 }
