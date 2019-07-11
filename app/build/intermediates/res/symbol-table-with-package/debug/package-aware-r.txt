@@ -1265,7 +1265,6 @@ id all
 id always
 id async
 id auto
-id avatar_hd_image
 id barrier
 id beginning
 id blocking
@@ -1347,7 +1346,6 @@ id line1
 id line3
 id listMode
 id list_item
-id loading_bar
 id login_weibo
 id masked
 id media_actions
@@ -1626,6 +1624,7 @@ string account_manage
 string album_name_all
 string app_name
 string appbar_scrolling_view_behavior
+string avatar
 string bottom_sheet_behavior
 string button_apply
 string button_apply_default
@@ -1639,6 +1638,7 @@ string character_counter_content_description
 string character_counter_pattern
 string collections
 string comment
+string content
 string empty_text
 string error_file_type
 string error_no_video_activity

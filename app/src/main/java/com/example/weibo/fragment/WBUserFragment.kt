@@ -1,6 +1,7 @@
 package com.example.weibo.fragment
 
 import android.annotation.SuppressLint
+import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -10,6 +11,7 @@ import android.widget.ImageView
 import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
 import com.example.weibo.R
@@ -22,6 +24,9 @@ import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.fragment_userinfo.view.*
+import top.zibin.luban.Luban
+import top.zibin.luban.OnCompressListener
+import java.io.File
 
 fun Fragment.toast(content:CharSequence){
     Toast.makeText(this.context,content,Toast.LENGTH_SHORT).show()
@@ -29,10 +34,9 @@ fun Fragment.toast(content:CharSequence){
 
 class WBUserFragment : Fragment() {
 
-    private lateinit var userName : TextView
-    private lateinit var userImage : CircleImageView
+    private lateinit var userName : Toolbar
+    private lateinit var userImage : ImageView
     private lateinit var loadingProgressBar : ProgressBar
-    private lateinit var userAvatarHdImage : ImageView
 
     private var userInfo:WBUser = WBUser()
     private val token = AccessTokenKeeper.readAccessToken(WBApplication.getContext())
@@ -50,8 +54,6 @@ class WBUserFragment : Fragment() {
 
         userName = view.user_name
         userImage = view.user_image
-        userAvatarHdImage = view.avatar_hd_image
-        loadingProgressBar = view.loading_bar
 
         loadUserInfo(this)
 
@@ -60,8 +62,7 @@ class WBUserFragment : Fragment() {
 
     @SuppressLint("CheckResult")
     private fun loadUserInfo(fragment: Fragment){
-        hideView(userImage,userAvatarHdImage,userName)
-        loadingProgressBar.visibility = View.VISIBLE
+        hideView(userImage,userName)
         Observable.create<WBUser> {
             //因为本身请求网络数据的业务已经指定在io线程开启所以不再使用okhttp异步请求
             val user = getUserInfo(token.uid)
@@ -73,15 +74,14 @@ class WBUserFragment : Fragment() {
             .subscribe({
                 if (it.id != "null"){
                     userInfo = it
-                    userName.text = userInfo.name
-                    Glide.with(fragment).load(userInfo.profileImageUrl).into(userImage)
+                    userName.title = userInfo.name
+                    Glide.with(fragment).load(userInfo.avatarHdUrl).placeholder(R.drawable.background).into(userImage)
                     Log.d("avatarUrl",userInfo.avatarHdUrl)
                     Log.d("user",userInfo.toString())
                 }else{
                     toast("没有获取到用户信息")
                 }
             }, { p0 -> Log.d("FAILURE",p0.message.toString() + Thread.currentThread().name) })
-        showView(userName,userImage,userAvatarHdImage)
-        loadingProgressBar.visibility = View.GONE
+        showView(userName,userImage)
     }
 }
