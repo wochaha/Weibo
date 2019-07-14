@@ -25,7 +25,6 @@ fun getUserInfo(uid:String):WBUser {
         urlBuilder.addQueryParameter("uid",uid)
 
         val urlStr = urlBuilder.build()
-        Log.d(tag,urlStr.toString())
 
         val request = Request.Builder()
             .url(urlStr.toString())

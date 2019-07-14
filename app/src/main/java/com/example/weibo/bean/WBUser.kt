@@ -83,7 +83,7 @@ class WBUser : Parcelable{
 
     override fun toString(): String {
         val builder = StringBuilder()
-        builder.append("id:$id name:$name screenName:$screenName description:$description")
+        builder.append("id:$id name:$name screenName:$screenName description:$description avatarUrl:$avatarHdUrl")
         return builder.toString()
     }
 }

@@ -44,12 +44,12 @@
         "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\d75edb7bf09cc0eb1e29f5ba954606ca\\res\\layout\\design_layout_snackbar_include.xml"
     },
     {
-        "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_bg.xml.flat",
-        "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\b18618cbf27efb4f00ac970e1113f1bf\\res\\drawable\\notification_bg.xml"
-    },
-    {
         "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\30ff9e21a5fbe57f95870037d0735237\\res\\drawable-mdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_bg.xml.flat",
+        "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\b18618cbf27efb4f00ac970e1113f1bf\\res\\drawable\\notification_bg.xml"
     },
     {
         "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
@@ -116,12 +116,12 @@
         "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\30ff9e21a5fbe57f95870037d0735237\\res\\layout\\abc_tooltip.xml"
     },
     {
-        "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
-        "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\30ff9e21a5fbe57f95870037d0735237\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
-    },
-    {
         "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
         "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\30ff9e21a5fbe57f95870037d0735237\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
+        "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\30ff9e21a5fbe57f95870037d0735237\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
         "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_design_ic_visibility_off.png.flat",
@@ -188,12 +188,12 @@
         "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\30ff9e21a5fbe57f95870037d0735237\\res\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
-        "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_design_ic_visibility_off.png.flat",
-        "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\d75edb7bf09cc0eb1e29f5ba954606ca\\res\\drawable-mdpi-v4\\design_ic_visibility_off.png"
-    },
-    {
         "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_normal.9.png.flat",
         "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\b18618cbf27efb4f00ac970e1113f1bf\\res\\drawable-mdpi-v4\\notification_bg_normal.9.png"
+    },
+    {
+        "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_design_ic_visibility_off.png.flat",
+        "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\d75edb7bf09cc0eb1e29f5ba954606ca\\res\\drawable-mdpi-v4\\design_ic_visibility_off.png"
     },
     {
         "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\layout_srl_classics_footer.xml.flat",
@@ -236,40 +236,40 @@
         "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\d75edb7bf09cc0eb1e29f5ba954606ca\\res\\interpolator-v21\\mtrl_fast_out_slow_in.xml"
     },
     {
-        "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_tabs_legacy_text_color_selector.xml.flat",
-        "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\d75edb7bf09cc0eb1e29f5ba954606ca\\res\\color\\mtrl_tabs_legacy_text_color_selector.xml"
-    },
-    {
         "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_design_ic_visibility.png.flat",
         "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\d75edb7bf09cc0eb1e29f5ba954606ca\\res\\drawable-xxxhdpi-v4\\design_ic_visibility.png"
     },
     {
-        "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_design_tint_password_toggle.xml.flat",
-        "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\d75edb7bf09cc0eb1e29f5ba954606ca\\res\\color-v23\\design_tint_password_toggle.xml"
+        "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_tabs_legacy_text_color_selector.xml.flat",
+        "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\d75edb7bf09cc0eb1e29f5ba954606ca\\res\\color\\mtrl_tabs_legacy_text_color_selector.xml"
     },
     {
         "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media_narrow_custom.xml.flat",
         "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\c50521c8e767df07f930cfae776b9cef\\res\\layout\\notification_template_big_media_narrow_custom.xml"
     },
     {
-        "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\layout-watch-v20_abc_alert_dialog_button_bar_material.xml.flat",
-        "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\30ff9e21a5fbe57f95870037d0735237\\res\\layout-watch-v20\\abc_alert_dialog_button_bar_material.xml"
+        "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_design_tint_password_toggle.xml.flat",
+        "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\d75edb7bf09cc0eb1e29f5ba954606ca\\res\\color-v23\\design_tint_password_toggle.xml"
     },
     {
-        "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_bg_color_selector.xml.flat",
-        "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\d75edb7bf09cc0eb1e29f5ba954606ca\\res\\color\\mtrl_btn_bg_color_selector.xml"
+        "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\layout-watch-v20_abc_alert_dialog_button_bar_material.xml.flat",
+        "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\30ff9e21a5fbe57f95870037d0735237\\res\\layout-watch-v20\\abc_alert_dialog_button_bar_material.xml"
     },
     {
         "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
         "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\30ff9e21a5fbe57f95870037d0735237\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
-        "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_ic_arrow_drop_down_white_24dp.png.flat",
-        "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\6a0a8fbb776b9376b5991df5c8ec0163\\res\\drawable-mdpi-v4\\ic_arrow_drop_down_white_24dp.png"
+        "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_bg_color_selector.xml.flat",
+        "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\d75edb7bf09cc0eb1e29f5ba954606ca\\res\\color\\mtrl_btn_bg_color_selector.xml"
     },
     {
         "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_black_16dp.png.flat",
         "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\30ff9e21a5fbe57f95870037d0735237\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_ic_arrow_drop_down_white_24dp.png.flat",
+        "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\6a0a8fbb776b9376b5991df5c8ec0163\\res\\drawable-mdpi-v4\\ic_arrow_drop_down_white_24dp.png"
     },
     {
         "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
@@ -320,12 +320,12 @@
         "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\30ff9e21a5fbe57f95870037d0735237\\res\\drawable-ldrtl-xxhdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
-        "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_ic_preview_radio_off.webp.flat",
-        "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\6a0a8fbb776b9376b5991df5c8ec0163\\res\\drawable-hdpi-v4\\ic_preview_radio_off.webp"
-    },
-    {
         "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\30ff9e21a5fbe57f95870037d0735237\\res\\drawable-xxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_ic_preview_radio_off.webp.flat",
+        "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\6a0a8fbb776b9376b5991df5c8ec0163\\res\\drawable-hdpi-v4\\ic_preview_radio_off.webp"
     },
     {
         "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_holo_light.xml.flat",
@@ -1362,6 +1362,10 @@
     {
         "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\30ff9e21a5fbe57f95870037d0735237\\res\\drawable-hdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_textview.xml.flat",
+        "source": "G:\\Weibo\\app\\src\\main\\res\\layout\\fragment_textview.xml"
     },
     {
         "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_popup_enter.xml.flat",

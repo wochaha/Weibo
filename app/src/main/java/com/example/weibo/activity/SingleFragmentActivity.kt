@@ -1,25 +1,16 @@
 package com.example.weibo.activity
 
-import android.content.Context
 import android.os.Bundle
-import android.util.Log
 import android.view.MenuItem
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.transaction
 import com.example.weibo.R
 import com.example.weibo.WBApplication
-import com.example.weibo.bean.WBUser
-import com.example.weibo.fragment.WBListFragment
 import com.example.weibo.fragment.WBUserFragment
-import com.example.weibo.utils.getUserInfo
 import com.google.android.material.navigation.NavigationView
 import com.sina.weibo.sdk.auth.AccessTokenKeeper
 import com.sina.weibo.sdk.auth.Oauth2AccessToken
-import io.reactivex.Observable
-import io.reactivex.android.schedulers.AndroidSchedulers
-import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_home_page.*
 import kotlinx.android.synthetic.main.nav_headers.view.*
 

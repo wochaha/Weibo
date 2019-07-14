@@ -1263,6 +1263,7 @@ id album_name
 id alertTitle
 id all
 id always
+id app_bar_layout
 id async
 id auto
 id barrier
@@ -1320,6 +1321,7 @@ id filled
 id fixed
 id forever
 id fragment_container
+id fragment_view_pager
 id ghost_view
 id gif
 id glide_custom_view_target_tag
@@ -1381,6 +1383,7 @@ id progress_horizontal
 id quit
 id radio
 id recyclerview
+id refresh_layout
 id relate_to_me
 id right
 id right_icon
@@ -1472,6 +1475,7 @@ id useLogo
 id user_head_portrait
 id user_image
 id user_name
+id user_tab_layout
 id video_duration
 id video_play_button
 id view_offset_helper
@@ -1549,6 +1553,7 @@ layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout fragment_media_selection
 layout fragment_preview_item
+layout fragment_textview
 layout fragment_userinfo
 layout fragment_wblist
 layout media_grid_content
@@ -2076,6 +2081,7 @@ style ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox
 style ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense
 style ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox
 style ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense
+style ToolBarStyle
 style Toolbar_Dracula
 style Toolbar_Zhihu
 style Widget_AppCompat_ActionBar
