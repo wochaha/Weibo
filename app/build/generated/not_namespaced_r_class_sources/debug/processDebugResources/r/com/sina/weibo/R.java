@@ -12,10 +12,10 @@ public final class R {
     public static final class drawable {
         private drawable() {}
 
-        public static final int retry_btn_default = 0x7f070084;
-        public static final int retry_btn_press = 0x7f070085;
-        public static final int retry_btn_selector = 0x7f070086;
-        public static final int weibosdk_common_shadow_top = 0x7f070089;
-        public static final int weibosdk_empty_failed = 0x7f07008a;
+        public static final int retry_btn_default = 0x7f070087;
+        public static final int retry_btn_press = 0x7f070088;
+        public static final int retry_btn_selector = 0x7f070089;
+        public static final int weibosdk_common_shadow_top = 0x7f07008c;
+        public static final int weibosdk_empty_failed = 0x7f07008d;
     }
 }

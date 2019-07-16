@@ -16,7 +16,7 @@ import com.sina.weibo.sdk.auth.AccessTokenKeeper
 import com.sina.weibo.sdk.auth.Oauth2AccessToken
 import kotlinx.android.synthetic.main.fragment_wblist.view.*
 
-class WBListFragment : Fragment() {
+class WBHomePageFragment : Fragment() {
     private lateinit var token: Oauth2AccessToken
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
 import com.example.weibo.R
 import com.example.weibo.adapter.WBFragmentStatePagerAdapter
+import com.example.weibo.bean.WBUser
 import com.example.weibo.listener.OnWBPageChangeListener
 import com.example.weibo.listener.OnWBTabSelectedListener
 import com.google.android.material.appbar.AppBarLayout
@@ -47,7 +48,7 @@ class WBUserFragment : Fragment() {
         userImage = view.user_image
 
         //解决SwipeRefreshLayout和AppBarLayout的滑动冲突问题
-        view.app_bar_layout.addOnOffsetChangedListener(AppBarLayout.OnOffsetChangedListener { p0, p1 ->
+        view.app_bar_layout.addOnOffsetChangedListener(AppBarLayout.OnOffsetChangedListener { _, p1 ->
             view.refresh_layout.isEnabled = p1 >= 0
         })
 
@@ -55,8 +56,12 @@ class WBUserFragment : Fragment() {
 
         val fragments = arrayListOf<Fragment>()
 
-        for (i in 0..3){
-            fragments.add(TextViewFragment())
+        for (i in 0..2){
+            if (i != 1){
+                fragments.add(TextViewFragment())
+            }else{
+                fragments.add(WBRVFragment.newIntent(WBUser()))
+            }
             val tab = view.user_tab_layout.newTab()
             tab.text = "标题$i"
             view.user_tab_layout.addTab(tab)

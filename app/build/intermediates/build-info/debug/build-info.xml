@@ -5,9 +5,8 @@
     build-mode="COLD"
     density="560dpi"
     format="10"
-    ir-eligibility="COMPATIBLE"
     plugin-version="3.4.1"
-    timestamp="1563088455500"
+    timestamp="1563269511085"
     token="7481145815624085270"
     verifier="COLD_SWAP_REQUESTED" >
 
@@ -19,51 +18,51 @@
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="180" />
+        duration="0" />
     <task
         name="verifier"
-        duration="7" />
+        duration="0" />
 
     <artifact
-        location="G:\Weibo\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+        location="G:\Weibo\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
         type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1563084581813"
+        timestamp="1563268812745"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="G:\Weibo\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
             type="SPLIT" />
         <artifact
-            location="G:\Weibo\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            location="G:\Weibo\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
             location="G:\Weibo\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="G:\Weibo\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="G:\Weibo\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-            type="SPLIT" />
-        <artifact
             location="G:\Weibo\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="G:\Weibo\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
             location="G:\Weibo\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
+            location="G:\Weibo\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            type="SPLIT" />
+        <artifact
             location="G:\Weibo\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="G:\Weibo\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
             location="G:\Weibo\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
             location="G:\Weibo\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-            type="SPLIT" />
-        <artifact
-            location="G:\Weibo\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
             location="G:\Weibo\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
@@ -74,19 +73,19 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1563086876788"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1563268871244"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="G:\Weibo\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+            location="G:\Weibo\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1563088455500"
+        timestamp="1563269511085"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="G:\Weibo\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            location="G:\Weibo\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
             type="SPLIT" />
     </build>
 
