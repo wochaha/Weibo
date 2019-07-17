@@ -3955,7 +3955,7 @@
 
         严律拎起手中的那壶青神山酒，笑道：“我这不是想要知道这仙家酒酿，到底与青神山有无渊源嘛。我家老祖，每次竹海洞天的青神宴，都会参加。”
 
-        朱枚白眼道：“就你严律最喜欢翻家谱和老黄历，生怕别人不知道你家祖上有多阔。蒋观澄的家族与师门传承，又不比你差，你见他吹嘘过自己的师伯是谁吗？不过他就是脑子不好使，听风就是雨，做什么事情都不过脑子的，稍稍给人撺掇几句，就喜欢炸毛。真当这儿是咱们家乡中土神洲啊，此次赶来剑气长城，我家老祖叮嘱了我好些，不许我在这边摆架子，乖乖当个哑巴聋子就成，唉，算了，我也没资格说这些，方才我就没少说话。说好了，你不许去君璧那边有什么说什么，就说我从头到尾都没讲话。君璧唉，才观海境，可他生气的时候，多可怕，我还好，反正境界不高，瞧瞧你们，还不是一个个照样学我噤若寒蝉。”</string><string name="avatar">用户头像</string><string name="transmit">转发</string><string name="thumbs_up">点赞</string></file><file path="G:\Weibo\app\src\main\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        朱枚白眼道：“就你严律最喜欢翻家谱和老黄历，生怕别人不知道你家祖上有多阔。蒋观澄的家族与师门传承，又不比你差，你见他吹嘘过自己的师伯是谁吗？不过他就是脑子不好使，听风就是雨，做什么事情都不过脑子的，稍稍给人撺掇几句，就喜欢炸毛。真当这儿是咱们家乡中土神洲啊，此次赶来剑气长城，我家老祖叮嘱了我好些，不许我在这边摆架子，乖乖当个哑巴聋子就成，唉，算了，我也没资格说这些，方才我就没少说话。说好了，你不许去君璧那边有什么说什么，就说我从头到尾都没讲话。君璧唉，才观海境，可他生气的时候，多可怕，我还好，反正境界不高，瞧瞧你们，还不是一个个照样学我噤若寒蝉。”</string><string name="avatar">用户头像</string><string name="transmit">转发</string><string name="thumbs_up">点赞</string><string name="no_more">没有更多了哦~</string><string name="load_more">上拉加载更多~</string></file><file path="G:\Weibo\app\src\main\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -3963,7 +3963,7 @@
     </style><style name="ToolBarStyle" parent="Theme.AppCompat">
         <item name="android:textColorPrimary">@android:color/black</item>
         <item name="android:textColorSecondary">@android:color/white</item>
-    </style></file></source><source path="G:\Weibo\app\build\generated\res\rs\debug"/><source path="G:\Weibo\app\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="G:\Weibo\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="G:\Weibo\app\src\debug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog">
+    </style></file><file name="item_weibo_foot" path="G:\Weibo\app\src\main\res\layout\item_weibo_foot.xml" qualifiers="" type="layout"/></source><source path="G:\Weibo\app\build\generated\res\rs\debug"/><source path="G:\Weibo\app\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="G:\Weibo\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="G:\Weibo\app\src\debug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog">
         <attr name="android:layout"/>
         <attr format="reference" name="buttonPanelSideLayout"/>
         <attr format="reference" name="listLayout"/>

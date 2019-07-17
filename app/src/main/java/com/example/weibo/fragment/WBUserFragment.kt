@@ -1,6 +1,8 @@
 package com.example.weibo.fragment
 
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -24,6 +26,10 @@ fun Fragment.toast(content:CharSequence){
     Toast.makeText(this.context,content,Toast.LENGTH_SHORT).show()
 }
 
+
+/**
+ * 用户主页
+ */
 class WBUserFragment : Fragment() {
 
     private lateinit var userName : Toolbar
@@ -51,6 +57,15 @@ class WBUserFragment : Fragment() {
         view.app_bar_layout.addOnOffsetChangedListener(AppBarLayout.OnOffsetChangedListener { _, p1 ->
             view.refresh_layout.isEnabled = p1 >= 0
         })
+
+        view.refresh_layout.setOnRefreshListener {
+            view.refresh_layout.isEnabled = true
+            view.refresh_layout.isRefreshing = true
+            Handler(Looper.getMainLooper()).postDelayed({
+                //view.refresh_layout.isEnabled = false
+                view.refresh_layout.isRefreshing = false
+            },3000)
+        }
 
         (activity as AppCompatActivity).setSupportActionBar(userName)
 
@@ -83,7 +98,7 @@ class WBUserFragment : Fragment() {
         return view
     }
 
-//    @SuppressLint("CheckResult")
+    //    @SuppressLint("CheckResult")
 //    private fun loadUserInfo(fragment: Fragment){
 //        Observable.create<WBUser> {
 //            //因为本身请求网络数据的业务已经指定在io线程开启所以不再使用okhttp异步请求

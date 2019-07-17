@@ -8,7 +8,7 @@ import com.example.weibo.bean.WBItem
 import kotlinx.android.synthetic.main.item_weibo.view.*
 
 /**
- * 微博item的holder
+ * 微博item的holder,之后将会实现相应的footView
  */
 class WBItemSimpleHolder
 /**

@@ -13,6 +13,7 @@ import com.sina.weibo.sdk.auth.AccessTokenKeeper
 import com.sina.weibo.sdk.auth.Oauth2AccessToken
 import kotlinx.android.synthetic.main.activity_home_page.*
 import kotlinx.android.synthetic.main.nav_headers.view.*
+import java.util.*
 
 abstract class SingleFragmentActivity : BaseAppCompatActivity(),NavigationView.OnNavigationItemSelectedListener {
     /**
@@ -82,7 +83,9 @@ abstract class SingleFragmentActivity : BaseAppCompatActivity(),NavigationView.O
     override fun onNavigationItemSelected(p0: MenuItem): Boolean {
         when(p0.itemId){
             R.id.home_page -> {
-                replaceFragment(supportFragmentManager,WBUserFragment())
+                if (currentFragment !is WBUserFragment){
+                    replaceFragment(supportFragmentManager,WBUserFragment())
+                }
             }
         }
         drawer_menu_layout.closeDrawers()

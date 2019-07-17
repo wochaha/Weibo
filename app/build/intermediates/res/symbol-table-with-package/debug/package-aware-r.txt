@@ -1277,6 +1277,7 @@ id blog_author_nick_name
 id blog_comment_counts
 id blog_comment_icon
 id blog_content
+id blog_content_container
 id blog_create_phone
 id blog_create_time
 id blog_thumbs_counts
@@ -1333,6 +1334,7 @@ id fill_horizontal
 id fill_vertical
 id filled
 id fixed
+id foot_view_content
 id forever
 id fragment_container
 id fragment_view_pager
@@ -1573,6 +1575,7 @@ layout fragment_textview
 layout fragment_userinfo
 layout fragment_wblist
 layout item_weibo
+layout item_weibo_foot
 layout media_grid_content
 layout media_grid_item
 layout mtrl_layout_snackbar
@@ -1683,10 +1686,12 @@ string fgh_text_loading_failed
 string fgh_text_loading_finish
 string hide_bottom_view_on_scroll_behavior
 string home_page
+string load_more
 string login
 string message
 string mine
 string mtrl_chip_close_icon_content_description
+string no_more
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through

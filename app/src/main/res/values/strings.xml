@@ -127,4 +127,6 @@
     <string name="avatar">用户头像</string>
     <string name="transmit">转发</string>
     <string name="thumbs_up">点赞</string>
+    <string name="load_more">上拉加载更多~</string>
+    <string name="no_more">没有更多了哦~</string>
 </resources>

@@ -12,6 +12,10 @@ import com.sina.weibo.sdk.auth.*
 import com.sina.weibo.sdk.auth.sso.SsoHandler
 import kotlinx.android.synthetic.main.activity_login.*
 
+/**
+ * 登录界面
+ * @author koala.k
+ */
 class WBLoginActivity : BaseAppCompatActivity() {
     private val TAG = "WEIBOTOKEN"
     private var ssoHandler: SsoHandler? = null
@@ -20,9 +24,9 @@ class WBLoginActivity : BaseAppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-        WbSdk.install(applicationContext,
-            AuthInfo(applicationContext, Constants.APP_KEY, Constants.REDIRECT_URL, Constants.SCOPE)
-        )
+//        WbSdk.install(applicationContext,
+//            AuthInfo(applicationContext, Constants.APP_KEY, Constants.REDIRECT_URL, Constants.SCOPE)
+//        )
 
         ssoHandler = SsoHandler(this@WBLoginActivity)
         login_weibo.setOnClickListener {
