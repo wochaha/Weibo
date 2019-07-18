@@ -22,6 +22,8 @@ import kotlinx.android.synthetic.main.wblist_recycler_view.view.*
 class WBRVFragment : Fragment() {
     private var user:WBUser? = null
     private val mHandler = Handler(Looper.getMainLooper())
+    private lateinit var layoutManager:LinearLayoutManager
+    private lateinit var adapter: WBItemRecyclerViewAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,34 +39,12 @@ class WBRVFragment : Fragment() {
                 list.add(item)
             }
         }
-        val layoutManager = LinearLayoutManager(this.context)
+        layoutManager = LinearLayoutManager(this.context)
         view.weibo_recycler_view.layoutManager = layoutManager
-        val adapter = WBItemRecyclerViewAdapter(list,true)
+        adapter = WBItemRecyclerViewAdapter(list,true)
         view.weibo_recycler_view.adapter = adapter
 
-        var lastVisibleItem = 0
-        view.weibo_recycler_view.addOnScrollListener(object : RecyclerView.OnScrollListener() {
-            override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
-                super.onScrolled(recyclerView, dx, dy)
-                lastVisibleItem = layoutManager.findLastVisibleItemPosition()
-            }
-
-            override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
-                super.onScrollStateChanged(recyclerView, newState)
-                if (newState == RecyclerView.SCROLL_STATE_IDLE){
-                    if (lastVisibleItem+1 == adapter.itemCount && adapter.nextPage){
-                        val newList = ArrayList<WBItem>()
-                        val item = WBItem(user!!,"哈哈哈红红火火恍恍惚惚","2019-07-01",12345,12345,"小米x")
-                        for (i in 1..5){
-                            newList.add(item)
-                        }
-                        mHandler.postDelayed({
-                            adapter.updateItems(newList,false)
-                        },1500)
-                    }
-                }
-            }
-        })
+        view.weibo_recycler_view.addOnScrollListener(OnWBScrollListener())
         return view
     }
 
@@ -75,6 +55,52 @@ class WBRVFragment : Fragment() {
             val fragment = WBRVFragment()
             fragment.arguments = bd
             return fragment
+        }
+    }
+
+    //引用父fragment的函数
+    fun refresh(re:Boolean) {
+        val fragment = activity?.supportFragmentManager?.findFragmentByTag(WBUserFragment::class.java.name)
+        if (fragment is WBUserFragment){
+            fragment.refresh(re)
+        }
+    }
+
+    inner class OnWBScrollListener
+        : RecyclerView.OnScrollListener() {
+
+        //获取外部类的引用
+        private fun getOuterReference() = this@WBRVFragment
+
+        private var lastVisibleItem = 0
+
+        override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+            super.onScrolled(recyclerView, dx, dy)
+            lastVisibleItem = getOuterReference().layoutManager.findLastVisibleItemPosition()
+        }
+
+        override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
+            super.onScrollStateChanged(recyclerView, newState)
+            if (newState == RecyclerView.SCROLL_STATE_IDLE){
+                if (lastVisibleItem+1 == getOuterReference().adapter.itemCount && getOuterReference().adapter.nextPage){
+                    mHandler.post{
+                        getOuterReference().refresh(true)
+                    }
+                    val newList = ArrayList<WBItem>()
+                    val item = WBItem(user!!,"哈哈哈红红火火恍恍惚惚",
+                        "2019-07-01",
+                        12345,
+                        12345,
+                        "小米x")
+                    for (i in 1..5){
+                        newList.add(item)
+                    }
+                    mHandler.postDelayed({
+                        getOuterReference().adapter.updateItems(newList,false)
+                        getOuterReference().refresh(false)
+                    },1500)
+                }
+            }
         }
     }
 }

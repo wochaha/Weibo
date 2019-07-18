@@ -11,6 +11,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import androidx.viewpager.widget.ViewPager
 import com.example.weibo.R
 import com.example.weibo.adapter.WBFragmentStatePagerAdapter
@@ -30,10 +31,11 @@ fun Fragment.toast(content:CharSequence){
 /**
  * 用户主页
  */
-class WBUserFragment : Fragment() {
+class WBUserFragment : Fragment(),SwipeRefreshLayout.OnRefreshListener {
 
     private lateinit var userName : Toolbar
     private lateinit var userImage : ImageView
+    private lateinit var refreshLayout:SwipeRefreshLayout
 
 //    private var userInfo:WBUser = WBUser()
 //    private val token = AccessTokenKeeper.readAccessToken(WBApplication.getContext())
@@ -52,20 +54,14 @@ class WBUserFragment : Fragment() {
 
         userName = view.user_name
         userImage = view.user_image
+        refreshLayout = view.refresh_layout
 
         //解决SwipeRefreshLayout和AppBarLayout的滑动冲突问题
         view.app_bar_layout.addOnOffsetChangedListener(AppBarLayout.OnOffsetChangedListener { _, p1 ->
-            view.refresh_layout.isEnabled = p1 >= 0
+            refreshLayout.isEnabled = p1 >= 0
         })
 
-        view.refresh_layout.setOnRefreshListener {
-            view.refresh_layout.isEnabled = true
-            view.refresh_layout.isRefreshing = true
-            Handler(Looper.getMainLooper()).postDelayed({
-                //view.refresh_layout.isEnabled = false
-                view.refresh_layout.isRefreshing = false
-            },3000)
-        }
+        refreshLayout.setOnRefreshListener(this)
 
         (activity as AppCompatActivity).setSupportActionBar(userName)
 
@@ -98,6 +94,10 @@ class WBUserFragment : Fragment() {
         return view
     }
 
+    fun refresh(refresh:Boolean){
+        refreshLayout.isRefreshing = refresh
+    }
+
     //    @SuppressLint("CheckResult")
 //    private fun loadUserInfo(fragment: Fragment){
 //        Observable.create<WBUser> {
@@ -123,4 +123,13 @@ class WBUserFragment : Fragment() {
 //                }
 //            }, { p0 -> Log.d("FAILURE",p0.message.toString() + Thread.currentThread().name) })
 //    }
+
+    override fun onRefresh() {
+        refreshLayout.isEnabled = true
+        refresh(true)
+        Handler(Looper.getMainLooper()).postDelayed({
+            //view.refresh_layout.isEnabled = false
+            refresh(false)
+        },3000)
+    }
 }
