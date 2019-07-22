@@ -39,11 +39,7 @@
 
 ## 感谢
 - [okhttp](https://github.com/square/okhttp)
-- [retrofit](https://github.com/square/retrofit)
 - [rxjava](https://github.com/ReactiveX/RxJava)
-- [greenDAO](https://https://github.com/greenrobot/greenDAO)
-- [Matisse](https://github.com/zhihu/Matisse)
 - [CircleImageView](https://github.com/hdodenhof/CircleImageView)
 - [Gson](https://github.com/google/gson)
-- [SmartRefreshLayout](https://github.com/scwang90/SmartRefreshLayout)
 - [Glide](https://github.com/bumptech/glide)
