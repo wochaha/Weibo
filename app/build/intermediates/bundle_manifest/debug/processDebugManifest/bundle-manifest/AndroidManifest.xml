@@ -27,9 +27,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         android:usesCleartextTraffic="true" >
-        <activity android:name="com.example.weibo.activity.WBLoginActivity" >
-        </activity>
         <activity android:name="com.example.weibo.activity.HomePageActivity" >
+        </activity>
+        <activity android:name="com.example.weibo.activity.WBLoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

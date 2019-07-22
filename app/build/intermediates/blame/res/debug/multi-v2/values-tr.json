@@ -4,7 +4,7 @@
             "outputFile": "G:\\Weibo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-tr\\values-tr.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\30ff9e21a5fbe57f95870037d0735237\\res\\values-tr\\values-tr.xml",
+                    "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\efb75db9e70fe5c2769c058b4270f0b5\\res\\values-tr\\values-tr.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\b18618cbf27efb4f00ac970e1113f1bf\\res\\values-tr\\values-tr.xml",
+                    "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\c897c6f84c4a6fbbc35ebc53a8458301\\res\\values-tr\\values-tr.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

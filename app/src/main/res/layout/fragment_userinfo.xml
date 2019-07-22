@@ -35,7 +35,7 @@
                         android:contentDescription="@string/avatar"/>
 
                 <androidx.appcompat.widget.Toolbar
-                        app:title="size"
+                        tools:title="size"
                         app:titleTextColor="#000000"
                         app:layout_collapseMode="pin"
                         app:layout_scrollFlags="scroll"

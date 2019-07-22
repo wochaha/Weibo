@@ -4,7 +4,7 @@
             "outputFile": "G:\\Weibo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\30ff9e21a5fbe57f95870037d0735237\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\efb75db9e70fe5c2769c058b4270f0b5\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
@@ -15,7 +15,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\a01f609508580859532ecc982e82cf4d\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\a1e5615779e37fbbc5b61c9bbb562750\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

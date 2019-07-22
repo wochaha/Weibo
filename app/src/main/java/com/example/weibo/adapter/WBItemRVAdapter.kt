@@ -14,7 +14,7 @@ import com.example.weibo.holder.WBItemSimpleHolder
  * 后续需要在构造方法里面添加一个参数表示是否还有下一页
  * @param nextPage true 有下一页   false 没有下一页
  */
-class WBItemRecyclerViewAdapter(itemList:ArrayList<WBItem>,var nextPage: Boolean) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class WBItemRVAdapter(itemList:ArrayList<WBItem>, var nextPage: Boolean) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     private val last = -1
     private val notLast = 1
 

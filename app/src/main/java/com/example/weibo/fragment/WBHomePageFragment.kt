@@ -5,13 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.viewpager.widget.ViewPager
 import com.example.weibo.R
 import com.example.weibo.WBApplication
 import com.example.weibo.adapter.WBFragmentStatePagerAdapter
 import com.example.weibo.listener.OnWBPageChangeListener
 import com.example.weibo.listener.OnWBTabSelectedListener
-import com.google.android.material.tabs.TabLayout
 import com.sina.weibo.sdk.auth.AccessTokenKeeper
 import com.sina.weibo.sdk.auth.Oauth2AccessToken
 import kotlinx.android.synthetic.main.fragment_wblist.view.*
@@ -29,7 +27,7 @@ class WBHomePageFragment : Fragment() {
         val fragments = arrayListOf<Fragment>()
 
         for (i in 0..1){
-            fragments.add(WBRVFragment())
+            fragments.add(WBItemRVFragment())
         }
 
         view.home_page_tab_layout.newTab().text = "关注"

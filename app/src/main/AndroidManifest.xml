@@ -16,9 +16,9 @@
             android:usesCleartextTraffic="true"
             android:supportsRtl="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".activity.WBLoginActivity">
-        </activity>
         <activity android:name=".activity.HomePageActivity">
+        </activity>
+        <activity android:name=".activity.WBLoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

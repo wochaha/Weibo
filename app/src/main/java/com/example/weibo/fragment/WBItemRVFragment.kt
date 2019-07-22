@@ -3,7 +3,6 @@ package com.example.weibo.fragment
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,7 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.weibo.R
-import com.example.weibo.adapter.WBItemRecyclerViewAdapter
+import com.example.weibo.adapter.WBItemRVAdapter
 import com.example.weibo.bean.WBItem
 import com.example.weibo.bean.WBUser
 import kotlinx.android.synthetic.main.wblist_recycler_view.view.*
@@ -19,11 +18,11 @@ import kotlinx.android.synthetic.main.wblist_recycler_view.view.*
 /**
  * 微博列表fragment，便于复用
  */
-class WBRVFragment : Fragment() {
+class WBItemRVFragment : Fragment() {
     private var user:WBUser? = null
     private val mHandler = Handler(Looper.getMainLooper())
     private lateinit var layoutManager:LinearLayoutManager
-    private lateinit var adapter: WBItemRecyclerViewAdapter
+    private lateinit var adapter: WBItemRVAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,7 +40,7 @@ class WBRVFragment : Fragment() {
         }
         layoutManager = LinearLayoutManager(this.context)
         view.weibo_recycler_view.layoutManager = layoutManager
-        adapter = WBItemRecyclerViewAdapter(list,true)
+        adapter = WBItemRVAdapter(list,true)
         view.weibo_recycler_view.adapter = adapter
 
         view.weibo_recycler_view.addOnScrollListener(OnWBScrollListener())
@@ -49,10 +48,10 @@ class WBRVFragment : Fragment() {
     }
 
     companion object{
-        fun newIntent(user:WBUser):WBRVFragment{
+        fun newIntent(user:WBUser):WBItemRVFragment{
             val bd = Bundle()
             bd.putParcelable("user",user)
-            val fragment = WBRVFragment()
+            val fragment = WBItemRVFragment()
             fragment.arguments = bd
             return fragment
         }
@@ -70,7 +69,7 @@ class WBRVFragment : Fragment() {
         : RecyclerView.OnScrollListener() {
 
         //获取外部类的引用
-        private fun getOuterReference() = this@WBRVFragment
+        private fun getOuterReference() = this@WBItemRVFragment
 
         private var lastVisibleItem = 0
 
