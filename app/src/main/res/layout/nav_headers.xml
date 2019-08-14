@@ -14,6 +14,29 @@
             android:layout_width="80dp"
             android:layout_height="80dp"/>
 
-    <TextView android:layout_margin="8dp" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp" tools:text="乌拉拉"/>
+    <TextView android:id="@+id/user_nick_name" android:layout_margin="8dp" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp" tools:text="乌拉拉"/>
+
+    <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:layout_margin="4dp"
+                tools:text="关注:123"
+                android:id="@+id/friends_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        <TextView
+                android:layout_margin="4dp"
+                tools:text="粉丝:123"
+                android:id="@+id/followers_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
 
 </LinearLayout>

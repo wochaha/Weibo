@@ -1334,10 +1334,12 @@ id fill_horizontal
 id fill_vertical
 id filled
 id fixed
+id followers_count
 id foot_view_content
 id forever
 id fragment_container
 id fragment_view_pager
+id friends_count
 id ghost_view
 id gif
 id glide_custom_view_target_tag
@@ -1493,7 +1495,9 @@ id up
 id useLogo
 id user_head_portrait
 id user_image
+id user_list
 id user_name
+id user_nick_name
 id user_tab_layout
 id video_duration
 id video_play_button
@@ -1574,6 +1578,7 @@ layout design_text_input_password_icon
 layout fragment_media_selection
 layout fragment_preview_item
 layout fragment_textview
+layout fragment_user_list
 layout fragment_userinfo
 layout fragment_wblist
 layout item_image

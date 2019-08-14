@@ -39,7 +39,33 @@ class WBUser : Parcelable{
     var statusesCount:Int = 0
 
     @SerializedName("favourites_count")
-    var favourites_count:Int = 0
+    var favouritesCount:Int = 0
+
+    @SerializedName("verified_reason")
+    var verifiedReason = "null"
+
+    @SerializedName("avatar_large")
+    var avatarLargeUrl = "null"
+
+    @SerializedName("status")
+    var recentStatus = WBItem()
+
+    constructor(parcel: Parcel) : this() {
+        id = parcel.readString().toString()
+        screenName = parcel.readString().toString()
+        name = parcel.readString().toString()
+        description = parcel.readString().toString()
+        profileImageUrl = parcel.readString().toString()
+        avatarHdUrl = parcel.readString().toString()
+        gender = parcel.readString().toString()
+        followersCount = parcel.readInt()
+        friendsCount = parcel.readInt()
+        statusesCount = parcel.readInt()
+        favouritesCount = parcel.readInt()
+        verifiedReason = parcel.readString().toString()
+        avatarLargeUrl = parcel.readString().toString()
+        recentStatus = parcel.readParcelable(WBItem::class.java.classLoader)!!
+    }
 
     constructor()
 
@@ -51,13 +77,11 @@ class WBUser : Parcelable{
         profileImageUrl = _profileImageUrl
     }
 
-    constructor(parcel: Parcel) : this(
-        parcel.readString().toString(),
-        parcel.readString().toString(),
-        parcel.readString().toString(),
-        parcel.readString().toString(),
-        parcel.readString().toString()
-    )
+    override fun toString(): String {
+        val builder = StringBuilder()
+        builder.append("id:$id name:$name screenName:$screenName description:$description avatarUrl:$avatarHdUrl")
+        return builder.toString()
+    }
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(id)
@@ -65,6 +89,15 @@ class WBUser : Parcelable{
         parcel.writeString(name)
         parcel.writeString(description)
         parcel.writeString(profileImageUrl)
+        parcel.writeString(avatarHdUrl)
+        parcel.writeString(gender)
+        parcel.writeInt(followersCount)
+        parcel.writeInt(friendsCount)
+        parcel.writeInt(statusesCount)
+        parcel.writeInt(favouritesCount)
+        parcel.writeString(verifiedReason)
+        parcel.writeString(avatarLargeUrl)
+        parcel.writeParcelable(recentStatus, flags)
     }
 
     override fun describeContents(): Int {
@@ -79,11 +112,5 @@ class WBUser : Parcelable{
         override fun newArray(size: Int): Array<WBUser?> {
             return arrayOfNulls(size)
         }
-    }
-
-    override fun toString(): String {
-        val builder = StringBuilder()
-        builder.append("id:$id name:$name screenName:$screenName description:$description avatarUrl:$avatarHdUrl")
-        return builder.toString()
     }
 }

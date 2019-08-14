@@ -29,6 +29,9 @@ import java.io.File
 import java.util.*
 import kotlin.collections.ArrayList
 
+/**
+ * 微博用户相册页
+ */
 class WBPicturesRVFragment : Fragment() {
     private lateinit var recyclerView: RecyclerView
 

@@ -1948,6 +1948,10 @@
         "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\efb75db9e70fe5c2769c058b4270f0b5\\res\\drawable-ldrtl-xhdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
+        "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_user_list.xml.flat",
+        "source": "G:\\Weibo\\app\\src\\main\\res\\layout\\fragment_user_list.xml"
+    },
+    {
         "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "G:\\Weibo\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },

@@ -20,11 +20,10 @@ class WBItemSimpleHolder
     //加载数据
     fun load(item:WBItem){
         //Glide.with(context).load(item.mUser.profileImageUrl).into(itemView.blog_author_avatar)
-        itemView.blog_author_nick_name.text = item.mUser.name
+        itemView.blog_author_nick_name.text = item.mUser?.name
         itemView.blog_create_time.text = item.mTime
-        itemView.blog_create_phone.text = item.mPhone
+        itemView.blog_create_phone.text = item.mSource
         itemView.blog_content.text = item.mContent
         itemView.blog_thumbs_counts.text = item.mCommCounts
-        itemView.blog_thumbs_counts.text = item.mThumbsCounts
     }
 }

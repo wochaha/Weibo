@@ -2,15 +2,22 @@ package com.example.weibo.activity
 
 import android.os.Bundle
 import android.view.MenuItem
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.transaction
+import com.bumptech.glide.Glide
 import com.example.weibo.R
 import com.example.weibo.WBApplication
+import com.example.weibo.bean.WBUser
 import com.example.weibo.fragment.WBUserFragment
+import com.example.weibo.utils.getUserInfo
 import com.google.android.material.navigation.NavigationView
 import com.sina.weibo.sdk.auth.AccessTokenKeeper
 import com.sina.weibo.sdk.auth.Oauth2AccessToken
+import io.reactivex.Observable
+import io.reactivex.android.schedulers.AndroidSchedulers
+import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_home_page.*
 import kotlinx.android.synthetic.main.nav_headers.view.*
 import java.util.*
@@ -21,7 +28,7 @@ abstract class SingleFragmentActivity : BaseAppCompatActivity(),NavigationView.O
      */
     protected abstract fun createFragment() : Fragment
 
-    private var token:Oauth2AccessToken? = null
+    private val token:Oauth2AccessToken = AccessTokenKeeper.readAccessToken(WBApplication.getContext())
 
     private var currentFragment:Fragment? = null
 
@@ -29,7 +36,7 @@ abstract class SingleFragmentActivity : BaseAppCompatActivity(),NavigationView.O
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_page)
 
-        token = AccessTokenKeeper.readAccessToken(WBApplication.getContext())
+        loadUserInfo(token.uid)
 
         addFragment()
 
@@ -60,7 +67,7 @@ abstract class SingleFragmentActivity : BaseAppCompatActivity(),NavigationView.O
     /**
      * @param fragment 需要显示的fragment
      */
-    fun replaceFragment(manager: FragmentManager,fragment: Fragment){
+    private fun replaceFragment(manager: FragmentManager,fragment: Fragment){
         if (!fragment.isAdded){
             if (currentFragment != null){
                 manager.transaction {
@@ -90,5 +97,25 @@ abstract class SingleFragmentActivity : BaseAppCompatActivity(),NavigationView.O
         }
         drawer_menu_layout.closeDrawers()
         return true
+    }
+
+    private fun loadUserInfo(uid:String){
+        Observable.create<WBUser> {
+            val user = getUserInfo(uid)
+            it.onNext(user)
+            it.onComplete()
+        }
+            .subscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
+            .subscribe {
+                    if (it.id != "null"){
+                        Glide.with(this).asBitmap().load(it.profileImageUrl).into(nav_menu.getHeaderView(0).user_head_portrait)
+                        nav_menu.getHeaderView(0).user_nick_name.text = it.screenName
+                        nav_menu.getHeaderView(0).friends_count.text = "关注:${it.friendsCount}"
+                        nav_menu.getHeaderView(0).followers_count.text = "关注:${it.followersCount}"
+                    }else{
+                        Toast.makeText(this,"数据加载失败",Toast.LENGTH_SHORT).show()
+                    }
+            }.isDisposed
     }
 }

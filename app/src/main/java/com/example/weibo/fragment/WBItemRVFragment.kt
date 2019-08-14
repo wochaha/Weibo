@@ -33,7 +33,7 @@ class WBItemRVFragment : Fragment() {
         val view = inflater.inflate(R.layout.wblist_recycler_view,container,false)
         val list = arrayListOf<WBItem>()
         if (user != null){
-            val item = WBItem(user!!,"哈哈哈红红火火恍恍惚惚","2019-07-01",12345,12345,"小米9")
+            val item = WBItem(user!!,"哈哈哈红红火火恍恍惚惚","2019-07-01",12345,"小米9")
             for (i in 1..10){
                 list.add(item)
             }
@@ -88,7 +88,6 @@ class WBItemRVFragment : Fragment() {
                     val newList = ArrayList<WBItem>()
                     val item = WBItem(user!!,"哈哈哈红红火火恍恍惚惚",
                         "2019-07-01",
-                        12345,
                         12345,
                         "小米x")
                     for (i in 1..5){

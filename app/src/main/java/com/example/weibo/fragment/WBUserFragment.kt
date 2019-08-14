@@ -56,8 +56,8 @@ class WBUserFragment : Fragment(),SwipeRefreshLayout.OnRefreshListener {
 
 
     private val token = AccessTokenKeeper.readAccessToken(WBApplication.getContext())
-    private val fragments = arrayListOf(TextViewFragment(),WBItemRVFragment.newIntent(WBUser()))
-    private val tabs = arrayListOf("主页","微博","相册")
+    private val fragments = arrayListOf(WBItemRVFragment.newIntent(WBUser()),TextViewFragment())
+    private val tabs = arrayListOf("微博","关注","粉丝")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
