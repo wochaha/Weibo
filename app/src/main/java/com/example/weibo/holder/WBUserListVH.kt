@@ -12,6 +12,6 @@ class WBUserListVH(val context: Context,itemView: View) : RecyclerView.ViewHolde
         Glide.with(context).asBitmap().load(user.avatarLargeUrl).into(itemView.user_avatar)
         itemView.list_user_nick_name.text = user.screenName
         itemView.verified_reason.text = user.verifiedReason
-        itemView.recent_status.text = user.status.mContent
+        itemView.recent_status.text = user.recentStatusContent
     }
 }

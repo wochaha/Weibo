@@ -1180,6 +1180,10 @@
         "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\efb75db9e70fe5c2769c058b4270f0b5\\res\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
+        "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_user.xml.flat",
+        "source": "G:\\Weibo\\app\\src\\main\\res\\layout\\item_user.xml"
+    },
+    {
         "merged": "G:\\Weibo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "C:\\Users\\Hasee\\.gradle\\caches\\transforms-2\\files-2.1\\efb75db9e70fe5c2769c058b4270f0b5\\res\\drawable-xxxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },

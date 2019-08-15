@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.provider.ContactsContract.CommonDataKinds.Relation.TYPE_FRIEND
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -21,6 +22,7 @@ import com.example.weibo.R
 import com.example.weibo.WBApplication
 import com.example.weibo.adapter.WBFragmentStatePagerAdapter
 import com.example.weibo.bean.WBUser
+import com.example.weibo.fragment.WBUserListFragment.Companion.TYPE_FOLLOWERS
 import com.example.weibo.listener.OnWBPageChangeListener
 import com.example.weibo.listener.OnWBTabSelectedListener
 import com.example.weibo.utils.getUserInfo
@@ -54,9 +56,8 @@ class WBUserFragment : Fragment(),SwipeRefreshLayout.OnRefreshListener {
     private lateinit var userAppBar : AppBarLayout
     private lateinit var userTab:TabLayout
 
-
     private val token = AccessTokenKeeper.readAccessToken(WBApplication.getContext())
-    private val fragments = arrayListOf(WBItemRVFragment.newIntent(WBUser()),TextViewFragment())
+    private val fragments = arrayListOf<Fragment>(WBItemRVFragment.newIntent(WBUser()))
     private val tabs = arrayListOf("微博","关注","粉丝")
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -133,7 +134,8 @@ class WBUserFragment : Fragment(),SwipeRefreshLayout.OnRefreshListener {
                         .placeholder(R.drawable.background)
                         .into(userAvatar)
 
-                    fragments.add(WBPicturesRVFragment.newIntent(it.avatarHdUrl))
+                    fragments.add(WBUserListFragment.newIntent(it.id, TYPE_FRIEND))
+                    fragments.add(WBUserListFragment.newIntent(it.id,TYPE_FOLLOWERS))
                     Log.d("WBUserFragment","viewpager有${fragments.size}页")
 
                     initView()
@@ -152,4 +154,6 @@ class WBUserFragment : Fragment(),SwipeRefreshLayout.OnRefreshListener {
             refresh(false)
         },3000)
     }
+
+
 }

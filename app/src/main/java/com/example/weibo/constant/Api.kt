@@ -9,9 +9,9 @@ class Api {
         const val USER_INFO = "users/show.json"
 
         //获取用户关注列表的UID
-        const val FRIENDS_LIST = "friendships/friends/ids.json"
+        const val FRIENDS_LIST = "friendships/friends.json"
 
         //获取用户粉丝列表
-        const val FOLLOWER_COUNT = "friendships/followers/ids.json"
+        const val FOLLOWER_COUNT = "friendships/followers.json"
     }
 }

@@ -47,8 +47,8 @@ class WBUser : Parcelable{
     @SerializedName("avatar_large")
     var avatarLargeUrl = "null"
 
-    @SerializedName("status")
-    var recentStatus = WBItem()
+    //最近一篇微博的内容
+    var recentStatusContent = ""
 
     constructor(parcel: Parcel) : this() {
         id = parcel.readString().toString()
@@ -64,7 +64,7 @@ class WBUser : Parcelable{
         favouritesCount = parcel.readInt()
         verifiedReason = parcel.readString().toString()
         avatarLargeUrl = parcel.readString().toString()
-        recentStatus = parcel.readParcelable(WBItem::class.java.classLoader)!!
+        recentStatusContent = parcel.readString().toString()
     }
 
     constructor()
@@ -97,7 +97,7 @@ class WBUser : Parcelable{
         parcel.writeInt(favouritesCount)
         parcel.writeString(verifiedReason)
         parcel.writeString(avatarLargeUrl)
-        parcel.writeParcelable(recentStatus, flags)
+        parcel.writeString(recentStatusContent)
     }
 
     override fun describeContents(): Int {

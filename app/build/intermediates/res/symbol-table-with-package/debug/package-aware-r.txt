@@ -1369,6 +1369,7 @@ id line1
 id line3
 id listMode
 id list_item
+id list_user_nick_name
 id login_weibo
 id masked
 id media_actions
@@ -1404,6 +1405,7 @@ id progress_circular
 id progress_horizontal
 id quit
 id radio
+id recent_status
 id recyclerview
 id refresh_layout
 id relate_to_me
@@ -1493,12 +1495,14 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id user_avatar
 id user_head_portrait
 id user_image
 id user_list
 id user_name
 id user_nick_name
 id user_tab_layout
+id verified_reason
 id video_duration
 id video_play_button
 id view_offset_helper
@@ -1582,6 +1586,7 @@ layout fragment_user_list
 layout fragment_userinfo
 layout fragment_wblist
 layout item_image
+layout item_user
 layout item_weibo
 layout item_weibo_foot
 layout media_grid_content
