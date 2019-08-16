@@ -10,6 +10,7 @@ import com.bumptech.glide.Glide
 import com.example.weibo.R
 import com.example.weibo.WBApplication
 import com.example.weibo.bean.WBUser
+import com.example.weibo.fragment.WBHomePageFragment
 import com.example.weibo.fragment.WBUserFragment
 import com.example.weibo.utils.getUserInfo
 import com.google.android.material.navigation.NavigationView
@@ -67,7 +68,7 @@ abstract class SingleFragmentActivity : BaseAppCompatActivity(),NavigationView.O
     /**
      * @param fragment 需要显示的fragment
      */
-    private fun replaceFragment(manager: FragmentManager,fragment: Fragment){
+    fun replaceFragment(manager: FragmentManager,fragment: Fragment){
         if (!fragment.isAdded){
             if (currentFragment != null){
                 manager.transaction {
@@ -78,9 +79,11 @@ abstract class SingleFragmentActivity : BaseAppCompatActivity(),NavigationView.O
                 add(R.id.weibo_content_container, fragment, fragment::class.java.name)
             }
         }else{
-            manager.transaction {
-                hide(currentFragment!!)
-                show(fragment)
+            if(currentFragment != fragment){
+                manager.transaction {
+                    hide(currentFragment!!)
+                    show(fragment)
+                }
             }
         }
         currentFragment = fragment
@@ -90,8 +93,8 @@ abstract class SingleFragmentActivity : BaseAppCompatActivity(),NavigationView.O
     override fun onNavigationItemSelected(p0: MenuItem): Boolean {
         when(p0.itemId){
             R.id.home_page -> {
-                if (currentFragment !is WBUserFragment){
-                    replaceFragment(supportFragmentManager,WBUserFragment())
+                if (currentFragment !is WBHomePageFragment){
+                    replaceFragment(supportFragmentManager,WBHomePageFragment())
                 }
             }
         }

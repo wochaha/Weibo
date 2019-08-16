@@ -6,10 +6,7 @@ import android.os.Handler
 import android.os.Looper
 import android.provider.ContactsContract.CommonDataKinds.Relation.TYPE_FRIEND
 import android.util.Log
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.view.ViewParent
+import android.view.*
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -128,6 +125,8 @@ class WBUserFragment : Fragment(),SwipeRefreshLayout.OnRefreshListener {
                     //使用toolbar需要先将toolbar的参数设置好再用其替换actionbar
                     userToolBar.title = it.name
                     (activity as AppCompatActivity).setSupportActionBar(userToolBar)
+                    (activity as AppCompatActivity).supportActionBar?.setDisplayHomeAsUpEnabled(true)
+                    (activity as AppCompatActivity).supportActionBar?.setHomeButtonEnabled(true)
 
                     Glide.with(this)
                         .load(it.avatarHdUrl)

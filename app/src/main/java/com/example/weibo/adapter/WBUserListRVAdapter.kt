@@ -39,6 +39,6 @@ class WBUserListRVAdapter : RecyclerView.Adapter<WBUserListVH>{
 
     fun reSet(){
         users.clear()
-        notifyDataSetChanged()
+        notifyItemMoved(0,itemCount)
     }
 }

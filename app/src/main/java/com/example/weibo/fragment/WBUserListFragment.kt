@@ -40,13 +40,11 @@ class WBUserListFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_user_list,container,false)
         view.user_list.layoutManager = LinearLayoutManager(this.context)
         view.user_list.adapter = adapter
-        loadUserList(Api.FRIENDS_LIST,uid)
-        refresh(false)
+        refresh()
         return view
     }
 
     private fun loadUserList(url:String,uid:String){
-        refresh(true)
         Observable.create<ArrayList<WBUser>> {
             val listUser = getUserList(url,uid)
             it.onNext(listUser)
@@ -61,13 +59,13 @@ class WBUserListFragment : Fragment() {
             }.isDisposed
     }
 
-    private fun refresh(re:Boolean) {
+    private fun refresh() {
         val fragment = activity?.supportFragmentManager?.findFragmentByTag(WBUserFragment::class.java.name)
         if (fragment is WBUserFragment){
-            if (re){
-                adapter.reSet()
-            }
-            fragment.refresh(re)
+            fragment.refresh(true)
+            adapter.reSet()
+            loadUserList(url,uid)
+            fragment.refresh(false)
         }
     }
 
