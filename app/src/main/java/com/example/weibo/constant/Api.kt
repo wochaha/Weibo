@@ -13,5 +13,7 @@ class Api {
 
         //获取用户粉丝列表
         const val FOLLOWER_COUNT = "friendships/followers.json"
+
+        const val USER_WEIBO = "statuses/user_timeline.json"
     }
 }

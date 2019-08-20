@@ -1275,14 +1275,17 @@ id blocking
 id blog_author_avatar
 id blog_author_nick_name
 id blog_comment_counts
+id blog_comment_counts_text
 id blog_comment_icon
 id blog_content
 id blog_content_container
 id blog_create_phone
 id blog_create_time
 id blog_thumbs_counts
+id blog_thumbs_counts_text
 id blog_thumbs_icon
 id blog_transmit_button
+id blog_transmit_button_text
 id blog_transmit_icon
 id bottom
 id bottom_toolbar

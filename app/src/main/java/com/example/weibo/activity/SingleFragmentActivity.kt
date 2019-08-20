@@ -31,7 +31,7 @@ abstract class SingleFragmentActivity : BaseAppCompatActivity(),NavigationView.O
 
     private val token:Oauth2AccessToken = AccessTokenKeeper.readAccessToken(WBApplication.getContext())
 
-    private var currentFragment:Fragment? = null
+    private lateinit var currentFragment:Fragment
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -70,10 +70,8 @@ abstract class SingleFragmentActivity : BaseAppCompatActivity(),NavigationView.O
      */
     fun replaceFragment(manager: FragmentManager,fragment: Fragment){
         if (!fragment.isAdded){
-            if (currentFragment != null){
-                manager.transaction {
-                    hide(currentFragment!!)
-                }
+            manager.transaction {
+                hide(currentFragment)
             }
             manager.transaction {
                 add(R.id.weibo_content_container, fragment, fragment::class.java.name)
@@ -81,7 +79,7 @@ abstract class SingleFragmentActivity : BaseAppCompatActivity(),NavigationView.O
         }else{
             if(currentFragment != fragment){
                 manager.transaction {
-                    hide(currentFragment!!)
+                    hide(currentFragment)
                     show(fragment)
                 }
             }
@@ -121,4 +119,6 @@ abstract class SingleFragmentActivity : BaseAppCompatActivity(),NavigationView.O
                     }
             }.isDisposed
     }
+
+
 }

@@ -14,12 +14,19 @@ import com.example.weibo.holder.WBItemSimpleHolder
  * 后续需要在构造方法里面添加一个参数表示是否还有下一页
  * @param nextPage true 有下一页   false 没有下一页
  */
-class WBItemRVAdapter(itemList:ArrayList<WBItem>, var nextPage: Boolean) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class WBItemRVAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private val last = -1
     private val notLast = 1
+    var nextPage:Boolean = false
 
-    private val list = itemList
+    private lateinit var list: ArrayList<WBItem>
 
+    constructor()
+
+    constructor(itemList: ArrayList<WBItem>, nextPage: Boolean = false){
+        list = itemList
+        this.nextPage = nextPage
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         val view:View
@@ -59,9 +66,14 @@ class WBItemRVAdapter(itemList:ArrayList<WBItem>, var nextPage: Boolean) : Recyc
         }
     }
 
-    fun updateItems(itemList: ArrayList<WBItem>,nextPage:Boolean){
+    fun updateItems(itemList: ArrayList<WBItem>,nextPage:Boolean = false){
         this.nextPage = nextPage
+        val backup = arrayListOf<WBItem>()
+        backup.addAll(list)
+        list.clear()
         list.addAll(itemList)
+        list.addAll(backup)
         notifyDataSetChanged()
+        backup.clear()
     }
 }

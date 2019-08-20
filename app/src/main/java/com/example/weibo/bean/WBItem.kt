@@ -32,7 +32,11 @@ class WBItem : Parcelable {
     @SerializedName("comments_count")
     var count:Int = 0
 
+    @SerializedName("reposts_count")
+    var reposts_count:Int = 0
+
     var mCommCounts:String = "评论"
+    var mRepostsCount = "转发"
 
     @SerializedName("thumbnail_pic")
     var smallPictureUrl = "null"
@@ -62,16 +66,22 @@ class WBItem : Parcelable {
     }
 
     fun handle(){
-        handleComment()
+        handleCommentAndRepost()
         handleResourceType()
         handleTime()
     }
 
-    private fun handleComment(){
+    private fun handleCommentAndRepost(){
         mCommCounts = when {
             count >= 10000 -> "${count/10000}万"
             count in 1..9999 -> count.toString()
             else -> "评论"
+        }
+        
+        mRepostsCount = when{
+            reposts_count >= 10000 -> "${reposts_count/10000}万"
+            reposts_count in 1..9999 -> reposts_count.toString()
+            else -> "转发"
         }
     }
 
@@ -116,6 +126,8 @@ class WBItem : Parcelable {
                             }
                             else -> append(SimpleDateFormat("MM-dd HH:mm").format(jobTime))
                         }
+                    }else if (createdMonth < currentMonth){
+                        append(SimpleDateFormat("MM-dd HH:mm").format(jobTime))
                     }
                 }
             }.toString()
@@ -130,7 +142,7 @@ class WBItem : Parcelable {
         val pattern = Pattern.compile(regex)
         val matcher = pattern.matcher(mSource)
         if (matcher.find()){
-            mSource = matcher.group(1)
+            mSource = "来自"+matcher.group(1)
         }
     }
 

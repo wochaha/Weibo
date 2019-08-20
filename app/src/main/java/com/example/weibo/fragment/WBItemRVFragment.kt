@@ -13,6 +13,11 @@ import com.example.weibo.R
 import com.example.weibo.adapter.WBItemRVAdapter
 import com.example.weibo.bean.WBItem
 import com.example.weibo.bean.WBUser
+import com.example.weibo.constant.Api.Companion.USER_WEIBO
+import com.example.weibo.utils.getWBItemList
+import io.reactivex.Observable
+import io.reactivex.android.schedulers.AndroidSchedulers
+import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.wblist_recycler_view.view.*
 
 /**
@@ -22,7 +27,7 @@ class WBItemRVFragment : Fragment() {
     private var user:WBUser? = null
     private val mHandler = Handler(Looper.getMainLooper())
     private lateinit var layoutManager:LinearLayoutManager
-    private lateinit var adapter: WBItemRVAdapter
+    private var adapter = WBItemRVAdapter()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,16 +37,13 @@ class WBItemRVFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.wblist_recycler_view,container,false)
         val list = arrayListOf<WBItem>()
-        if (user != null){
-            val item = WBItem(user!!,"哈哈哈红红火火恍恍惚惚","2019-07-01",12345,"小米9")
-            for (i in 1..10){
-                list.add(item)
-            }
-        }
+
         layoutManager = LinearLayoutManager(this.context)
         view.weibo_recycler_view.layoutManager = layoutManager
         adapter = WBItemRVAdapter(list,true)
         view.weibo_recycler_view.adapter = adapter
+
+        loadWBItemInfo()
 
         view.weibo_recycler_view.addOnScrollListener(OnWBScrollListener())
         return view
@@ -65,6 +67,24 @@ class WBItemRVFragment : Fragment() {
         }
     }
 
+    private fun loadWBItemInfo(){
+        Observable.create<ArrayList<WBItem>> {
+            val list = getWBItemList(USER_WEIBO)
+            if (list.isNotEmpty()){
+                it.onNext(list)
+            }
+            it.onComplete()
+        }.subscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
+            .subscribe {
+                if (it.isNotEmpty()){
+                    refresh(true)
+                    adapter.updateItems(it)
+                    refresh(false)
+                }
+            }.isDisposed
+    }
+
     inner class OnWBScrollListener
         : RecyclerView.OnScrollListener() {
 
@@ -85,18 +105,10 @@ class WBItemRVFragment : Fragment() {
                     mHandler.post{
                         getOuterReference().refresh(true)
                     }
-                    val newList = ArrayList<WBItem>()
-                    val item = WBItem(user!!,"哈哈哈红红火火恍恍惚惚",
-                        "2019-07-01",
-                        12345,
-                        "小米x")
-                    for (i in 1..5){
-                        newList.add(item)
-                    }
-                    mHandler.postDelayed({
-                        getOuterReference().adapter.updateItems(newList,false)
+                    getOuterReference().loadWBItemInfo()
+                    mHandler.post{
                         getOuterReference().refresh(false)
-                    },1500)
+                    }
                 }
             }
         }

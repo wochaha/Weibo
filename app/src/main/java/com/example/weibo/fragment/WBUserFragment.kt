@@ -1,6 +1,5 @@
 package com.example.weibo.fragment
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -17,6 +16,7 @@ import androidx.viewpager.widget.ViewPager
 import com.bumptech.glide.Glide
 import com.example.weibo.R
 import com.example.weibo.WBApplication
+import com.example.weibo.activity.SingleFragmentActivity
 import com.example.weibo.adapter.WBFragmentStatePagerAdapter
 import com.example.weibo.bean.WBUser
 import com.example.weibo.fragment.WBUserListFragment.Companion.TYPE_FOLLOWERS
@@ -26,15 +26,11 @@ import com.example.weibo.utils.getUserInfo
 import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.tabs.TabLayout
 import com.sina.weibo.sdk.auth.AccessTokenKeeper
-import io.reactivex.BackpressureStrategy
-import io.reactivex.Flowable
-import io.reactivex.FlowableOnSubscribe
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.fragment_userinfo.view.*
 import kotlinx.android.synthetic.main.fragment_userinfo.view.user_tab_layout
-import java.io.File
 
 fun Fragment.toast(content:CharSequence){
     Toast.makeText(this.context,content,Toast.LENGTH_SHORT).show()
@@ -56,6 +52,10 @@ class WBUserFragment : Fragment(),SwipeRefreshLayout.OnRefreshListener {
     private val token = AccessTokenKeeper.readAccessToken(WBApplication.getContext())
     private val fragments = arrayListOf<Fragment>(WBItemRVFragment.newIntent(WBUser()))
     private val tabs = arrayListOf("微博","关注","粉丝")
+
+    override fun onSaveInstanceState(outState: Bundle) {
+//        super.onSaveInstanceState(outState)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -154,5 +154,16 @@ class WBUserFragment : Fragment(),SwipeRefreshLayout.OnRefreshListener {
         },3000)
     }
 
-
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        when(item?.itemId){
+            android.R.id.home -> {
+                if (activity is SingleFragmentActivity){
+                    val ac = activity as SingleFragmentActivity
+                    ac.replaceFragment(ac.supportFragmentManager,WBHomePageFragment())
+                    Log.d("WBHomePageFragment","fragment replace")
+                }
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
 }
