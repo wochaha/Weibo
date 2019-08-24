@@ -62,6 +62,8 @@ abstract class SingleFragmentActivity : BaseAppCompatActivity(),NavigationView.O
                 add(R.id.weibo_content_container,fragment,fragment::class.java.name)
                 currentFragment = fragment
             }
+        }else{
+            replaceFragment(manager,createFragment())
         }
     }
 

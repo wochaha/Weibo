@@ -15,5 +15,7 @@ class Api {
         const val FOLLOWER_COUNT = "friendships/followers.json"
 
         const val USER_WEIBO = "statuses/user_timeline.json"
+
+        const val HOME_WEIBO = "statuses/home_timeline.json"
     }
 }

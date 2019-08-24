@@ -13,6 +13,7 @@ import com.example.weibo.R
 import com.example.weibo.adapter.WBItemRVAdapter
 import com.example.weibo.bean.WBItem
 import com.example.weibo.bean.WBUser
+import com.example.weibo.constant.Api.Companion.HOME_WEIBO
 import com.example.weibo.constant.Api.Companion.USER_WEIBO
 import com.example.weibo.utils.getWBItemList
 import io.reactivex.Observable
@@ -24,14 +25,20 @@ import kotlinx.android.synthetic.main.wblist_recycler_view.view.*
  * 微博列表fragment，便于复用
  */
 class WBItemRVFragment : Fragment() {
-    private var user:WBUser? = null
     private val mHandler = Handler(Looper.getMainLooper())
     private lateinit var layoutManager:LinearLayoutManager
     private var adapter = WBItemRVAdapter()
+    private lateinit var apiUrl:String
+    private var type: Int? = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        user = arguments?.getParcelable<WBUser>("user")
+        type = arguments?.getInt("type",0)
+        when(type){
+            0 -> apiUrl = USER_WEIBO
+            1 -> apiUrl = HOME_WEIBO
+            else -> HOME_WEIBO
+        }
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -43,16 +50,16 @@ class WBItemRVFragment : Fragment() {
         adapter = WBItemRVAdapter(list,true)
         view.weibo_recycler_view.adapter = adapter
 
-        loadWBItemInfo()
+        loadWBItemInfo(apiUrl)
 
         view.weibo_recycler_view.addOnScrollListener(OnWBScrollListener())
         return view
     }
 
     companion object{
-        fun newIntent(user:WBUser):WBItemRVFragment{
+        fun newIntent(type:Int):WBItemRVFragment{
             val bd = Bundle()
-            bd.putParcelable("user",user)
+            bd.putInt("type",type)
             val fragment = WBItemRVFragment()
             fragment.arguments = bd
             return fragment
@@ -67,9 +74,11 @@ class WBItemRVFragment : Fragment() {
         }
     }
 
-    private fun loadWBItemInfo(){
+    //后面添加页码信息
+    private fun loadWBItemInfo(api:String){
+        refresh(true)
         Observable.create<ArrayList<WBItem>> {
-            val list = getWBItemList(USER_WEIBO)
+            val list = getWBItemList(api)
             if (list.isNotEmpty()){
                 it.onNext(list)
             }
@@ -78,7 +87,6 @@ class WBItemRVFragment : Fragment() {
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe {
                 if (it.isNotEmpty()){
-                    refresh(true)
                     adapter.updateItems(it)
                     refresh(false)
                 }
@@ -105,7 +113,7 @@ class WBItemRVFragment : Fragment() {
                     mHandler.post{
                         getOuterReference().refresh(true)
                     }
-                    getOuterReference().loadWBItemInfo()
+                    getOuterReference().loadWBItemInfo(apiUrl)
                     mHandler.post{
                         getOuterReference().refresh(false)
                     }

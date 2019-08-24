@@ -1352,9 +1352,9 @@ id groups
 id hint
 id home
 id homeAsUp
+id home_container
 id home_page
-id home_page_tab_layout
-id home_page_view_pager
+id home_tool_bar
 id icon
 id icon_group
 id ifRoom

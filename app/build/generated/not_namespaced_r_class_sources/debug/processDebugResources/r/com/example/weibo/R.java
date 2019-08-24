@@ -6119,9 +6119,9 @@ public final class R {
     public static final int hint=0x7f080079;
     public static final int home=0x7f08007a;
     public static final int homeAsUp=0x7f08007b;
-    public static final int home_page=0x7f08007c;
-    public static final int home_page_tab_layout=0x7f08007d;
-    public static final int home_page_view_pager=0x7f08007e;
+    public static final int home_container=0x7f08007c;
+    public static final int home_page=0x7f08007d;
+    public static final int home_tool_bar=0x7f08007e;
     public static final int icon=0x7f08007f;
     public static final int icon_group=0x7f080080;
     public static final int ifRoom=0x7f080081;

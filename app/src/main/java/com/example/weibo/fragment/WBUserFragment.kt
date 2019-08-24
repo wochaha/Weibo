@@ -50,7 +50,7 @@ class WBUserFragment : Fragment(),SwipeRefreshLayout.OnRefreshListener {
     private lateinit var userTab:TabLayout
 
     private val token = AccessTokenKeeper.readAccessToken(WBApplication.getContext())
-    private val fragments = arrayListOf<Fragment>(WBItemRVFragment.newIntent(WBUser()))
+    private val fragments = arrayListOf<Fragment>(WBItemRVFragment.newIntent(0))
     private val tabs = arrayListOf("微博","关注","粉丝")
 
     override fun onSaveInstanceState(outState: Bundle) {

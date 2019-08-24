@@ -1351,9 +1351,9 @@ int id groups 0x7f080078
 int id hint 0x7f080079
 int id home 0x7f08007a
 int id homeAsUp 0x7f08007b
-int id home_page 0x7f08007c
-int id home_page_tab_layout 0x7f08007d
-int id home_page_view_pager 0x7f08007e
+int id home_container 0x7f08007c
+int id home_page 0x7f08007d
+int id home_tool_bar 0x7f08007e
 int id icon 0x7f08007f
 int id icon_group 0x7f080080
 int id ifRoom 0x7f080081
