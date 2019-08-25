@@ -25,6 +25,7 @@ class WBHomePageFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setHasOptionsMenu(true)
         token = AccessTokenKeeper.readAccessToken(WBApplication.getContext())
     }
 
@@ -33,10 +34,14 @@ class WBHomePageFragment : Fragment() {
 
         val frag = WBItemRVFragment.newIntent(1)
 
-        val manager = activity?.supportFragmentManager
+        val manager = childFragmentManager
 
-        manager?.transaction {
-            add(R.id.home_container,frag,frag::class.java.name)
+        val f = manager.findFragmentById(R.id.home_container)
+
+        if (f == null){
+            manager.transaction {
+                add(R.id.home_container,frag,frag::class.java.name)
+            }
         }
 
         return view

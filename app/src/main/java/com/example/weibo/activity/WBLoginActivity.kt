@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.example.weibo.R
 import com.example.weibo.WBApplication
 import com.example.weibo.constant.Constants
@@ -16,7 +17,7 @@ import kotlinx.android.synthetic.main.activity_login.*
  * 登录界面
  * @author koala.k
  */
-class WBLoginActivity : BaseAppCompatActivity() {
+class WBLoginActivity : AppCompatActivity() {
     private val TAG = "WEIBOTOKEN"
     private var ssoHandler: SsoHandler? = null
     private var mAccessToken : Oauth2AccessToken? = null

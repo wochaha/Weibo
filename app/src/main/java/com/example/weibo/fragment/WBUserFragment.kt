@@ -53,10 +53,6 @@ class WBUserFragment : Fragment(),SwipeRefreshLayout.OnRefreshListener {
     private val fragments = arrayListOf<Fragment>(WBItemRVFragment.newIntent(0))
     private val tabs = arrayListOf("微博","关注","粉丝")
 
-    override fun onSaveInstanceState(outState: Bundle) {
-//        super.onSaveInstanceState(outState)
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setHasOptionsMenu(true)
@@ -97,7 +93,7 @@ class WBUserFragment : Fragment(),SwipeRefreshLayout.OnRefreshListener {
         userPager.currentItem = 0
 
         userPager.adapter =
-            WBFragmentStatePagerAdapter(fragmentManager!!, fragments)
+            WBFragmentStatePagerAdapter(childFragmentManager, fragments)
 
         //tab被选中是设置对应的fragment至viewpager中
         userTab.addOnTabSelectedListener(OnWBTabSelectedListener(userPager))

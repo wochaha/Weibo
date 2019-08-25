@@ -12,10 +12,4 @@ class HomePageActivity : SingleFragmentActivity() {
     override fun createFragment(): Fragment {
         return WBHomePageFragment()
     }
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
-
-
 }

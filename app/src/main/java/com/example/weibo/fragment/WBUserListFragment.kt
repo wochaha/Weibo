@@ -63,7 +63,7 @@ class WBUserListFragment : Fragment() {
         val fragment = activity?.supportFragmentManager?.findFragmentByTag(WBUserFragment::class.java.name)
         if (fragment is WBUserFragment){
             fragment.refresh(true)
-            adapter.reSet()
+            //adapter.reSet()
             loadUserList(url,uid)
             fragment.refresh(false)
         }

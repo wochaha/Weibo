@@ -3,6 +3,7 @@ package com.example.weibo.activity
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.transaction
@@ -21,9 +22,8 @@ import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_home_page.*
 import kotlinx.android.synthetic.main.nav_headers.view.*
-import java.util.*
 
-abstract class SingleFragmentActivity : BaseAppCompatActivity(),NavigationView.OnNavigationItemSelectedListener {
+abstract class SingleFragmentActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelectedListener {
     /**
      * @return 返回创建的fragment，在子类activity启动的时候使用该fragment
      */
@@ -35,6 +35,7 @@ abstract class SingleFragmentActivity : BaseAppCompatActivity(),NavigationView.O
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.hide()
         setContentView(R.layout.activity_home_page)
 
         loadUserInfo(token.uid)
@@ -60,6 +61,7 @@ abstract class SingleFragmentActivity : BaseAppCompatActivity(),NavigationView.O
 
             manager.transaction {
                 add(R.id.weibo_content_container,fragment,fragment::class.java.name)
+                addToBackStack(null)
                 currentFragment = fragment
             }
         }else{
@@ -74,8 +76,6 @@ abstract class SingleFragmentActivity : BaseAppCompatActivity(),NavigationView.O
         if (!fragment.isAdded){
             manager.transaction {
                 hide(currentFragment)
-            }
-            manager.transaction {
                 add(R.id.weibo_content_container, fragment, fragment::class.java.name)
             }
         }else{
