@@ -111,6 +111,8 @@
 
 1. fragment重新显示的时候其内所有控件消失，不可用，导致白屏
 
+   已解决。问题出在我调用的是当前fragment的fragmentManager，导致加载的时候只加载当前fragment的控件，嵌套在当前fragment中的fragment需要使用childFragmentManager进行加载
+
 
 
 
