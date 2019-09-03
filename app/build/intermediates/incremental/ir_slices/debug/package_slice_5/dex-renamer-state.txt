@@ -1,4 +1,0 @@
-#Sat Aug 24 13:56:20 CST 2019
-base.0=G\:\\Weibo\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\5
-path.0=classes.dex
-renamed.0=classes.dex

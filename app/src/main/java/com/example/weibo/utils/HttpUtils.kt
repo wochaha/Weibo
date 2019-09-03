@@ -4,10 +4,12 @@ import android.content.Context
 import android.nfc.Tag
 import android.util.Log
 import com.example.weibo.WBApplication
+import com.example.weibo.bean.WBComment
 import com.example.weibo.bean.WBItem
 import com.example.weibo.bean.WBUser
 import com.example.weibo.constant.Api.Companion.BASE_URL
 import com.example.weibo.constant.Api.Companion.FRIENDS_LIST
+import com.example.weibo.constant.Api.Companion.ITEM_COMMENTS
 import com.example.weibo.constant.Api.Companion.USER_INFO
 import com.google.gson.JsonArray
 import com.sina.weibo.sdk.auth.AccessTokenKeeper
@@ -134,4 +136,44 @@ fun getWBItemList(api:String):ArrayList<WBItem>{
         Log.d("uids","url is null,request failure")
     }
     return list
+}
+
+fun getWBItemComments(statusId:String):ArrayList<WBComment>{
+    val comments = arrayListOf<WBComment>()
+
+    val token = AccessTokenKeeper.readAccessToken(WBApplication.getContext())
+    val urlBuilder = HttpUrl.parse(BASE_URL+ ITEM_COMMENTS)?.newBuilder()
+
+    if (urlBuilder != null) {
+        urlBuilder.addQueryParameter("access_token", token.token)
+        urlBuilder.addQueryParameter("id", statusId)
+        urlBuilder.addQueryParameter("filter_by_author", 0.toString())
+
+        val urlStr = urlBuilder.build()
+
+        val request = Request.Builder()
+            .url(urlStr.toString())
+            .get()
+            .build()
+
+        val client = OkHttpClient.Builder().build()
+
+        val response = client.newCall(request).execute()
+
+        val json = response.body()?.string()
+
+        if (json == null){
+            Log.d("friendList","请求数据失败!!!")
+        }else{
+            val array = JSONObject(json).getJSONArray("comments")
+            for (i in 0 until array.length()){
+                val ob = array.getJSONObject(i)
+                val item = jsonToBean<WBComment>(ob.toString())
+                comments.add(item)
+            }
+        }
+    }else{
+        Log.d("comments","url is null,request failure")
+    }
+    return comments
 }

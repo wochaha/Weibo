@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.weibo.R
 import com.example.weibo.bean.WBItem
-import com.example.weibo.holder.WBItemFVHolder
+import com.example.weibo.holder.WBItemorCommentFVHolder
 import com.example.weibo.holder.WBItemSimpleHolder
 
 /**
@@ -33,7 +33,7 @@ class WBItemRVAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder> {
         val holder:RecyclerView.ViewHolder
         if (viewType == last){
             view = LayoutInflater.from(parent.context).inflate(R.layout.item_weibo_foot,parent,false)
-            holder = WBItemFVHolder(view)
+            holder = WBItemorCommentFVHolder(view)
         }else{
             view = LayoutInflater.from(parent.context).inflate(R.layout.item_weibo,parent,false)
             holder = WBItemSimpleHolder(parent.context,view)
@@ -49,9 +49,9 @@ class WBItemRVAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder> {
         Log.d("position",position.toString())
         if (getItemViewType(position) == last){
             if (nextPage){
-                (holder as WBItemFVHolder).load(WBItemFVHolder.LOAD_MORE)
+                (holder as WBItemorCommentFVHolder).load(WBItemorCommentFVHolder.LOAD_MORE)
             }else{
-                (holder as WBItemFVHolder).load(WBItemFVHolder.NO_MORE)
+                (holder as WBItemorCommentFVHolder).load(WBItemorCommentFVHolder.NO_MORE)
             }
         }else{
             (holder as WBItemSimpleHolder).load(list[position])
