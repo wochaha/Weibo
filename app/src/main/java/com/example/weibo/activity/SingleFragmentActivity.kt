@@ -1,6 +1,7 @@
 package com.example.weibo.activity
 
 import android.os.Bundle
+import android.util.Log
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -86,6 +87,7 @@ abstract class SingleFragmentActivity : AppCompatActivity(),NavigationView.OnNav
                 }
             }
         }
+        Log.d("REPLACE",fragment::class.java.name)
         currentFragment = fragment
     }
 

@@ -4,10 +4,10 @@ import android.icu.text.SimpleDateFormat
 import android.os.Parcel
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
-import java.lang.StringBuilder
 import java.text.ParseException
 import java.util.*
 import java.util.regex.Pattern
+import kotlin.text.StringBuilder
 
 //微博item的超类
 class WBItem : Parcelable {
@@ -169,5 +169,12 @@ class WBItem : Parcelable {
         override fun newArray(size: Int): Array<WBItem?> {
             return arrayOfNulls(size)
         }
+    }
+
+    override fun toString(): String {
+        return StringBuilder().apply {
+            append("id:$statusIdStr\n")
+            append("transmitCount:$mCommCounts\n")
+        }.toString()
     }
 }

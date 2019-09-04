@@ -23,6 +23,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
 }
 
 dependencies {
@@ -50,7 +56,6 @@ dependencies {
     implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-andx-11'//封装完善的recyclerview
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     implementation 'org.greenrobot:greendao:3.2.2'
-    implementation 'com.sina.weibo.sdk:core:2.0.3:openDefaultRelease@aar'
 
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'com.google.android.material:material:1.0.0'
