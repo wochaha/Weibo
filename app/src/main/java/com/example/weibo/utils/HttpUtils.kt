@@ -1,23 +1,16 @@
 package com.example.weibo.utils
 
-import android.content.Context
-import android.nfc.Tag
 import android.util.Log
 import com.example.weibo.WBApplication
 import com.example.weibo.bean.WBComment
 import com.example.weibo.bean.WBItem
 import com.example.weibo.bean.WBUser
 import com.example.weibo.constant.Api.Companion.BASE_URL
-import com.example.weibo.constant.Api.Companion.FRIENDS_LIST
 import com.example.weibo.constant.Api.Companion.ITEM_COMMENTS
 import com.example.weibo.constant.Api.Companion.USER_INFO
-import com.google.gson.JsonArray
 import com.sina.weibo.sdk.auth.AccessTokenKeeper
-import com.sina.weibo.sdk.auth.Oauth2AccessToken
 import okhttp3.*
-import org.json.JSONArray
 import org.json.JSONObject
-import java.io.IOException
 
 fun getUserInfo(uid:String):WBUser {
     val tag = "userInfo"
@@ -42,7 +35,7 @@ fun getUserInfo(uid:String):WBUser {
 
         val response = client.newCall(request).execute()
 
-        wbUser = jsonToWBUser(response.body()?.string())
+        wbUser = jsonToBean<WBUser>(response.body()?.string())
     }else{
         Log.d(tag,"url is null,request failure")
     }
@@ -83,7 +76,7 @@ fun getUserList(api:String,uid: String):ArrayList<WBUser>{
             for (i in 0 until jsonArray.length()){
                 val jsonOb = jsonArray.getJSONObject(i)
                 val ob = jsonOb.getString("status")
-                val user = jsonToWBUser(jsonOb.toString())
+                val user = jsonToBean<WBUser>(jsonOb.toString())
                 user.recentStatusContent = JSONObject(ob).getString("text")
                 users.add(user)
             }
@@ -128,7 +121,7 @@ fun getWBItemList(api:String):ArrayList<WBItem>{
             val jsonArray = jsonObject.getJSONArray("statuses")
             for (i in 0 until jsonArray.length()){
                 val ob = jsonArray.getJSONObject(i)
-                val item = jsonToWBItem(ob.toString())
+                val item = jsonToBean<WBItem>(ob.toString())
                 list.add(item)
             }
         }

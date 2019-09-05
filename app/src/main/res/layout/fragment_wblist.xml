@@ -8,6 +8,7 @@
     <androidx.appcompat.widget.Toolbar
             android:background="@color/design_default_color_primary"
             app:title="关注"
+            app:navigationIcon="@drawable/ic_drawer_menu"
             app:titleTextColor="#ffffff"
             android:id="@+id/home_tool_bar"
             android:layout_width="match_parent"

@@ -115,13 +115,21 @@
 
 
 
+#### 2019.09.05
+
+1. 调整部分UI
+2. 所有的json转bean使用统一的泛型方法jsonToBean(json:String?)
+3. 发现一旦每天请求次数达到上限继续使用程序将崩溃，准备解决
+
+
+
 ## BUG列表
 
 1. fragment重新显示的时候其内所有控件消失，不可用，导致白屏
 
    已解决。问题出在我调用的是当前fragment的fragmentManager，导致加载的时候只加载当前fragment的控件，嵌套在当前fragment中的fragment需要使用childFragmentManager进行加载
 
-
+2. 每天请求次数使用完后继续使用APP会导致程序崩溃
 
 
 ## 感谢

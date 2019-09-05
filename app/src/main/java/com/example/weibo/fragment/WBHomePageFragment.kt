@@ -3,6 +3,7 @@ package com.example.weibo.fragment
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
@@ -10,6 +11,7 @@ import androidx.fragment.app.transaction
 import androidx.viewpager.widget.ViewPager
 import com.example.weibo.R
 import com.example.weibo.WBApplication
+import com.example.weibo.activity.HomePageActivity
 import com.example.weibo.adapter.WBFragmentStatePagerAdapter
 import com.example.weibo.listener.OnWBPageChangeListener
 import com.example.weibo.listener.OnWBTabSelectedListener
@@ -31,6 +33,9 @@ class WBHomePageFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.fragment_wblist,container,false)
+        (activity as HomePageActivity).setSupportActionBar(view.home_tool_bar)
+        (activity as HomePageActivity).supportActionBar?.setHomeButtonEnabled(true)
+        (activity as HomePageActivity).supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         val frag = WBItemRVFragment.newIntent(1)
 

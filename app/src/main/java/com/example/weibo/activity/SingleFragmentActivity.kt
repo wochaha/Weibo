@@ -2,9 +2,11 @@ package com.example.weibo.activity
 
 import android.os.Bundle
 import android.util.Log
+import android.view.Gravity
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.transaction
@@ -45,8 +47,8 @@ abstract class SingleFragmentActivity : AppCompatActivity(),NavigationView.OnNav
 
         nav_menu.setCheckedItem(R.id.home_page)
         nav_menu.getHeaderView(0).user_head_portrait.setOnClickListener {
-            replaceFragment(supportFragmentManager,WBUserFragment())
             drawer_menu_layout.closeDrawers()
+            replaceFragment(supportFragmentManager,WBUserFragment())
         }
         nav_menu.setNavigationItemSelectedListener(this)
     }
@@ -62,7 +64,7 @@ abstract class SingleFragmentActivity : AppCompatActivity(),NavigationView.OnNav
 
             manager.transaction {
                 add(R.id.weibo_content_container,fragment,fragment::class.java.name)
-                addToBackStack(null)
+                //addToBackStack(null)
                 currentFragment = fragment
             }
         }else{
@@ -95,13 +97,22 @@ abstract class SingleFragmentActivity : AppCompatActivity(),NavigationView.OnNav
     override fun onNavigationItemSelected(p0: MenuItem): Boolean {
         when(p0.itemId){
             R.id.home_page -> {
+                drawer_menu_layout.closeDrawers()
                 if (currentFragment !is WBHomePageFragment){
                     replaceFragment(supportFragmentManager,WBHomePageFragment())
                 }
             }
         }
-        drawer_menu_layout.closeDrawers()
         return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            android.R.id.home -> {
+                drawer_menu_layout.openDrawer(GravityCompat.START)
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 
     private fun loadUserInfo(uid:String){
