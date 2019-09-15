@@ -1,6 +1,7 @@
 package com.example.weibo.fragment
 
 import android.app.AppComponentFactory
+import android.graphics.Point
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -9,11 +10,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.example.weibo.R
+import com.example.weibo.activity.HomePageActivity
 import com.example.weibo.activity.SingleFragmentActivity
 import com.example.weibo.adapter.WBCommentRVAdapter
+import com.example.weibo.adapter.WBItemPictureRVAdapter
 import com.example.weibo.bean.WBComment
 import com.example.weibo.bean.WBItem
 import com.example.weibo.utils.getWBItemComments
@@ -26,14 +30,13 @@ import kotlinx.android.synthetic.main.fragment_wbdetail.view.*
 class WBDetailPageFragment : Fragment() {
     private lateinit var wbItem: WBItem
     private lateinit var viewLayout:View
-    private val adapter = WBCommentRVAdapter()
+    private val commentAdapter = WBCommentRVAdapter()
     private val TAG = "WBDetailPageFragment"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setHasOptionsMenu(true)
         wbItem = arguments?.getParcelable("item") ?: WBItem()
-        Log.d(TAG,wbItem.toString())
     }
 
     override fun onCreateView(
@@ -53,7 +56,23 @@ class WBDetailPageFragment : Fragment() {
         viewLayout.weibo_detail_page_time.text = wbItem.mTime
         viewLayout.weibo_detail_page_content.text = wbItem.mContent
         viewLayout.weibo_detail_page_comment_list.layoutManager = LinearLayoutManager(this.context)
-        viewLayout.weibo_detail_page_comment_list.adapter = adapter
+        viewLayout.weibo_detail_page_comment_list.adapter = commentAdapter
+
+        Log.d(TAG,wbItem.toString())
+        if (wbItem.picturesUrl.size > 0){
+            val point = Point()
+            val defaultDisplay = (context as HomePageActivity).windowManager.defaultDisplay
+            defaultDisplay.getSize(point)
+            Log.d(TAG,"x : ${point.x},y : ${point.y}")
+            val pictureAdapter = WBItemPictureRVAdapter(this,point,wbItem.picturesUrl)
+            val layoutManager = if (wbItem.picturesUrl.size >= 3){
+                GridLayoutManager(context,3)
+            }else{
+                GridLayoutManager(context,wbItem.picturesUrl.size)
+            }
+            viewLayout.weibo_detail_page_picture_list.layoutManager = layoutManager
+            viewLayout.weibo_detail_page_picture_list.adapter = pictureAdapter
+        }
 
         Log.d(TAG,"init success")
 
@@ -72,7 +91,7 @@ class WBDetailPageFragment : Fragment() {
         }.subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe {
-                adapter.update(it)
+                commentAdapter.update(it)
             }.isDisposed
         
     }

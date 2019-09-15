@@ -47,7 +47,7 @@ class WBItemRVFragment : Fragment() {
 
         layoutManager = LinearLayoutManager(this.context)
         view.weibo_recycler_view.layoutManager = layoutManager
-        adapter = WBItemRVAdapter(list,true)
+        adapter = WBItemRVAdapter(this,list,true)
         view.weibo_recycler_view.adapter = adapter
 
         loadWBItemInfo(apiUrl)

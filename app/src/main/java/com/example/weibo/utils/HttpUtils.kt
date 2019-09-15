@@ -35,7 +35,10 @@ fun getUserInfo(uid:String):WBUser {
 
         val response = client.newCall(request).execute()
 
-        wbUser = jsonToBean<WBUser>(response.body()?.string())
+        val json = response.body()?.string()
+        Log.d("returnJson",json.toString())
+
+        wbUser = jsonToBean(json)
     }else{
         Log.d(tag,"url is null,request failure")
     }
@@ -66,6 +69,7 @@ fun getUserList(api:String,uid: String):ArrayList<WBUser>{
         val response = client.newCall(request).execute()
 
         val json = response.body()?.string()
+        Log.d("returnJson",json.toString())
 
         if (json == null){
             Log.d("friendList","请求数据失败!!!")
@@ -113,6 +117,7 @@ fun getWBItemList(api:String):ArrayList<WBItem>{
         val response = client.newCall(request).execute()
 
         val json = response.body()?.string()
+        Log.d("returnJson",json.toString())
 
         if (json == null){
             Log.d("friendList","请求数据失败!!!")
@@ -154,6 +159,7 @@ fun getWBItemComments(statusId:String):ArrayList<WBComment>{
         val response = client.newCall(request).execute()
 
         val json = response.body()?.string()
+        Log.d("returnJson",json.toString())
 
         if (json == null){
             Log.d("friendList","请求数据失败!!!")

@@ -3,10 +3,11 @@ package com.example.weibo.bean
 import android.os.Parcel
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import java.lang.StringBuilder
 
 class WBPicUrl() : Parcelable {
     @SerializedName("thumbnail_pic")
-    var thumbnailPicture = "null"
+    var thumbnailPicture:String = "null"
 
     constructor(parcel: Parcel) : this() {
         thumbnailPicture = parcel.readString().toString()
@@ -28,5 +29,11 @@ class WBPicUrl() : Parcelable {
         override fun newArray(size: Int): Array<WBPicUrl?> {
             return arrayOfNulls(size)
         }
+    }
+
+    override fun toString(): String {
+        return StringBuilder().apply {
+            append(thumbnailPicture)
+        }.toString()
     }
 }

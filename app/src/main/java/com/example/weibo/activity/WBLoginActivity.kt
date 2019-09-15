@@ -26,15 +26,9 @@ class WBLoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        if (AccessTokenKeeper.readAccessToken(WBApplication.getContext()) == null){
-            ssoHandler = SsoHandler(this@WBLoginActivity)
-            login_weibo.setOnClickListener {
-                ssoHandler?.authorize(SelfWbAuthListener())
-            }
-        }else{
-            val intent = Intent(this,HomePageActivity::class.java)
-            startActivity(intent)
-            finish()
+        ssoHandler = SsoHandler(this@WBLoginActivity)
+        login_weibo.setOnClickListener {
+            ssoHandler?.authorize(SelfWbAuthListener())
         }
     }
 

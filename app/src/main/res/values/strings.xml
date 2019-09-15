@@ -129,4 +129,7 @@
     <string name="thumbs_up">点赞</string>
     <string name="load_more">上拉加载更多~</string>
     <string name="no_more">没有更多了哦~</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -1,11 +1,13 @@
 package com.example.weibo.holder
 
 import android.content.Context
+import android.graphics.Point
 import android.view.View
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.weibo.activity.HomePageActivity
-import com.example.weibo.activity.SingleFragmentActivity
+import com.example.weibo.adapter.WBItemPictureRVAdapter
 import com.example.weibo.bean.WBItem
 import com.example.weibo.fragment.WBDetailPageFragment
 import kotlinx.android.synthetic.main.item_weibo.view.*
@@ -19,6 +21,7 @@ class WBItemSimpleHolder
  * @param itemView holder的界面
  */(context: Context, itemView: View) : RecyclerView.ViewHolder(itemView) {
     private val mContext = context
+
     //加载数据
     fun load(item:WBItem){
         item.handle()
@@ -27,7 +30,7 @@ class WBItemSimpleHolder
         itemView.blog_create_time.text = item.mTime
         itemView.blog_create_phone.text = item.mSource
         itemView.blog_content.text = item.mContent
-        itemView.blog_thumbs_counts_text.text = item.mCommCounts
+        itemView.blog_comment_counts_text.text = item.mCommCounts
         itemView.blog_transmit_button_text.text = item.mRepostsCount
         itemView.setOnClickListener {
             if (mContext is HomePageActivity){
