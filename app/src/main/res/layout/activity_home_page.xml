@@ -6,7 +6,7 @@
         android:id="@+id/drawer_menu_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".activity.HomePageActivity">
+        tools:context=".ui.activity.HomePageActivity">
 
     <FrameLayout android:id="@+id/weibo_content_container" android:layout_width="match_parent" android:layout_height="match_parent">
 

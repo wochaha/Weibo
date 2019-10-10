@@ -2,12 +2,12 @@ package com.example.weibo.utils
 
 import android.util.Log
 import com.example.weibo.WBApplication
-import com.example.weibo.bean.WBComment
-import com.example.weibo.bean.WBItem
-import com.example.weibo.bean.WBUser
-import com.example.weibo.constant.Api.Companion.BASE_URL
-import com.example.weibo.constant.Api.Companion.ITEM_COMMENTS
-import com.example.weibo.constant.Api.Companion.USER_INFO
+import com.example.weibo.data.bean.WBComment
+import com.example.weibo.data.bean.WBItem
+import com.example.weibo.data.bean.WBUser
+import com.example.weibo.data.constant.Api.Companion.BASE_URL
+import com.example.weibo.data.constant.Api.Companion.ITEM_COMMENTS
+import com.example.weibo.data.constant.Api.Companion.USER_INFO
 import com.sina.weibo.sdk.auth.AccessTokenKeeper
 import okhttp3.*
 import org.json.JSONObject

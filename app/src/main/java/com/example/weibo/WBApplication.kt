@@ -3,7 +3,7 @@ package com.example.weibo
 import android.annotation.SuppressLint
 import android.app.Application
 import android.content.Context
-import com.example.weibo.constant.Constants
+import com.example.weibo.data.constant.Constants
 import com.sina.weibo.sdk.WbSdk
 import com.sina.weibo.sdk.auth.AuthInfo
 
